@@ -1,5 +1,4 @@
 import 'package:flutter/material.dart';
-import 'package:trade_hub/shop%20details.dart';
 import 'package:trade_hub/shop%20sign%20in.dart';
 
 import 'navigation bar.dart';

@@ -296,7 +296,7 @@ class _ShopsigninnnState extends State<Shopsigninnn> {
                   //-----------------------------------save-------------------------------------------------------------------------------------------------------
 
                   Padding(
-                    padding: const EdgeInsets.only(right: 20,top: 10),
+                    padding: const EdgeInsets.only(right: 20, top: 10),
                     child: Row(
                       mainAxisAlignment: MainAxisAlignment.end,
                       children: [
@@ -326,6 +326,922 @@ class _ShopsigninnnState extends State<Shopsigninnn> {
 
           //======================================shop address===================================================================================
 
+          Padding(
+            padding: const EdgeInsets.only(left: 23, top: 20),
+            child: Text(
+              'Shope Address',
+              style: GoogleFonts.inter(
+                  fontWeight: FontWeight.w500,
+                  fontSize: 15.52,
+                  color: Color(0xff5B5B5B)),
+            ),
+          ),
+
+          Padding(
+            padding: const EdgeInsets.only(left: 13, right: 13, top: 5),
+            child: Container(
+              width: double.infinity,
+              height: 943,
+              decoration: BoxDecoration(
+                  borderRadius: BorderRadius.circular(8),
+                  color: Colors.white,
+                  boxShadow: [
+                    BoxShadow(
+                        color: Colors.black,
+                        blurRadius: 10,
+                        offset: Offset(5, 5)),
+                  ]),
+
+              //-------------------------------------------------------------------------------------------------------------------------------------------------
+
+              child: Column(
+                children: [
+                  Padding(
+                    padding: const EdgeInsets.only(left: 20, top: 20),
+                    child: Row(
+                      children: [
+                        Padding(
+                          padding: const EdgeInsets.only(left: 5),
+                          child: Text(
+                            'Legal Bussiness Name',
+                            style: GoogleFonts.inter(
+                                fontWeight: FontWeight.w700,
+                                fontSize: 15,
+                                color: Color(0xff1D1E20)),
+                          ),
+                        ),
+                      ],
+                    ),
+                  ),
+                  Padding(
+                    padding:
+                        const EdgeInsets.only(left: 20, right: 35, top: 10),
+                    child: Container(
+                      width: double.infinity,
+                      height: 44,
+                      decoration: BoxDecoration(
+                          border: Border.all(color: Color(0xff544C4C99)),
+                          borderRadius: BorderRadius.circular(6)),
+                      child: TextField(
+                        decoration: InputDecoration(
+                            border: InputBorder.none,
+                            hintText: '      My shope',
+                            hintStyle: TextStyle(
+                                color: Color(0xff544C4C),
+                                fontWeight: FontWeight.w500,
+                                fontSize: 14)),
+                      ),
+                    ),
+                  ),
+
+                  //------------------------------------------------------------------------------------------------------------------------------------------
+
+                  Padding(
+                    padding: const EdgeInsets.only(left: 20, top: 15),
+                    child: Row(
+                      children: [
+                        Padding(
+                          padding: const EdgeInsets.only(left: 5),
+                          child: Text(
+                            'Address Line 1',
+                            style: GoogleFonts.inter(
+                                fontWeight: FontWeight.w700,
+                                fontSize: 15,
+                                color: Color(0xff1D1E20)),
+                          ),
+                        ),
+                      ],
+                    ),
+                  ),
+                  Padding(
+                    padding:
+                        const EdgeInsets.only(left: 20, right: 35, top: 10),
+                    child: Container(
+                      width: double.infinity,
+                      height: 44,
+                      decoration: BoxDecoration(
+                          border: Border.all(color: Color(0xff544C4C99)),
+                          borderRadius: BorderRadius.circular(6)),
+                      child: TextField(
+                        decoration: InputDecoration(
+                            border: InputBorder.none,
+                            hintText: '      xxxxxxxxx',
+                            hintStyle: TextStyle(
+                                color: Color(0xff544C4C),
+                                fontWeight: FontWeight.w500,
+                                fontSize: 14)),
+                      ),
+                    ),
+                  ),
+
+                  //------------------------------------------------------------------------------------------------------------------------------------------
+
+                  Padding(
+                    padding: const EdgeInsets.only(left: 20, top: 15),
+                    child: Row(
+                      children: [
+                        Padding(
+                          padding: const EdgeInsets.only(left: 5),
+                          child: Text(
+                            'Address Line 2',
+                            style: GoogleFonts.inter(
+                                fontWeight: FontWeight.w700,
+                                fontSize: 15,
+                                color: Color(0xff1D1E20)),
+                          ),
+                        ),
+                      ],
+                    ),
+                  ),
+                  Padding(
+                    padding:
+                        const EdgeInsets.only(left: 20, right: 35, top: 10),
+                    child: Container(
+                      width: double.infinity,
+                      height: 44,
+                      decoration: BoxDecoration(
+                          border: Border.all(color: Color(0xff544C4C99)),
+                          borderRadius: BorderRadius.circular(6)),
+                      child: TextField(
+                        decoration: InputDecoration(
+                            border: InputBorder.none,
+                            hintText: '      xxxxxxxxx',
+                            hintStyle: TextStyle(
+                                color: Color(0xff544C4C),
+                                fontWeight: FontWeight.w500,
+                                fontSize: 14)),
+                      ),
+                    ),
+                  ),
+
+                  //------------------------------------------------------------------------------------------------------------------------------------------
+
+                  Padding(
+                    padding: const EdgeInsets.only(left: 20, top: 15),
+                    child: Row(
+                      children: [
+                        Padding(
+                          padding: const EdgeInsets.only(left: 5),
+                          child: Text(
+                            'City',
+                            style: GoogleFonts.inter(
+                                fontWeight: FontWeight.w700,
+                                fontSize: 15,
+                                color: Color(0xff1D1E20)),
+                          ),
+                        ),
+                      ],
+                    ),
+                  ),
+                  Padding(
+                    padding:
+                        const EdgeInsets.only(left: 20, right: 35, top: 10),
+                    child: Container(
+                      width: double.infinity,
+                      height: 44,
+                      decoration: BoxDecoration(
+                          border: Border.all(color: Color(0xff544C4C99)),
+                          borderRadius: BorderRadius.circular(6)),
+                      child: TextField(
+                        decoration: InputDecoration(
+                            border: InputBorder.none,
+                            hintText: '      xxxxx',
+                            hintStyle: TextStyle(
+                                color: Color(0xff544C4C),
+                                fontWeight: FontWeight.w500,
+                                fontSize: 14)),
+                      ),
+                    ),
+                  ),
+
+                  //------------------------------------------------------------------------------------------------------------------------------------------
+
+                  Padding(
+                    padding: const EdgeInsets.only(left: 20, top: 15),
+                    child: Row(
+                      children: [
+                        Padding(
+                          padding: const EdgeInsets.only(left: 5),
+                          child: Text(
+                            'Post Code/Zip',
+                            style: GoogleFonts.inter(
+                                fontWeight: FontWeight.w700,
+                                fontSize: 15,
+                                color: Color(0xff1D1E20)),
+                          ),
+                        ),
+                      ],
+                    ),
+                  ),
+                  Padding(
+                    padding:
+                        const EdgeInsets.only(left: 20, right: 35, top: 10),
+                    child: Container(
+                      width: double.infinity,
+                      height: 44,
+                      decoration: BoxDecoration(
+                          border: Border.all(color: Color(0xff544C4C99)),
+                          borderRadius: BorderRadius.circular(6)),
+                      child: TextField(
+                        decoration: InputDecoration(
+                            border: InputBorder.none,
+                            hintText: '      6255',
+                            hintStyle: TextStyle(
+                                color: Color(0xff544C4C),
+                                fontWeight: FontWeight.w500,
+                                fontSize: 14)),
+                      ),
+                    ),
+                  ),
+
+                  //-----------------------------------------------------------------------------------------------------------------------
+
+                  Padding(
+                    padding: const EdgeInsets.only(left: 20, top: 15),
+                    child: Row(
+                      children: [
+                        Padding(
+                          padding: const EdgeInsets.only(left: 5),
+                          child: Text(
+                            'Country',
+                            style: GoogleFonts.inter(
+                                fontWeight: FontWeight.w700,
+                                fontSize: 15,
+                                color: Color(0xff1D1E20)),
+                          ),
+                        ),
+                      ],
+                    ),
+                  ),
+                  Padding(
+                    padding:
+                        const EdgeInsets.only(left: 20, right: 35, top: 10),
+                    child: Container(
+                      width: double.infinity,
+                      height: 44,
+                      decoration: BoxDecoration(
+                          border: Border.all(color: Color(0xff544C4C99)),
+                          borderRadius: BorderRadius.circular(6)),
+                      child: TextField(
+                        decoration: InputDecoration(
+                            border: InputBorder.none,
+                            hintText: '      India',
+                            suffixIcon: Icon(Icons.keyboard_arrow_down_rounded),
+                            hintStyle: TextStyle(
+                                color: Color(0xff544C4C),
+                                fontWeight: FontWeight.w500,
+                                fontSize: 14)),
+                      ),
+                    ),
+                  ),
+
+                  //-----------------------------------------------------------------------------------------------------------------------
+
+                  Padding(
+                    padding: const EdgeInsets.only(left: 20, top: 15),
+                    child: Row(
+                      children: [
+                        Padding(
+                          padding: const EdgeInsets.only(left: 5),
+                          child: Text(
+                            'State',
+                            style: GoogleFonts.inter(
+                                fontWeight: FontWeight.w700,
+                                fontSize: 15,
+                                color: Color(0xff1D1E20)),
+                          ),
+                        ),
+                      ],
+                    ),
+                  ),
+                  Padding(
+                    padding:
+                        const EdgeInsets.only(left: 20, right: 35, top: 10),
+                    child: Container(
+                      width: double.infinity,
+                      height: 44,
+                      decoration: BoxDecoration(
+                          border: Border.all(color: Color(0xff544C4C99)),
+                          borderRadius: BorderRadius.circular(6)),
+                      child: TextField(
+                        decoration: InputDecoration(
+                            border: InputBorder.none,
+                            hintText: '      Kerala',
+                            suffixIcon: Icon(Icons.keyboard_arrow_down_rounded),
+                            hintStyle: TextStyle(
+                                color: Color(0xff544C4C),
+                                fontWeight: FontWeight.w500,
+                                fontSize: 14)),
+                      ),
+                    ),
+                  ),
+
+                  //-----------------------------------------------------------------------------------------------------------------------
+
+                  Padding(
+                    padding: const EdgeInsets.only(left: 20, top: 15),
+                    child: Row(
+                      children: [
+                        Padding(
+                          padding: const EdgeInsets.only(left: 5),
+                          child: Text(
+                            'Locate On Map',
+                            style: GoogleFonts.inter(
+                                fontWeight: FontWeight.w700,
+                                fontSize: 15,
+                                color: Color(0xff1D1E20)),
+                          ),
+                        ),
+                      ],
+                    ),
+                  ),
+                  Padding(
+                    padding:
+                        const EdgeInsets.only(left: 20, right: 35, top: 10),
+                    child: Container(
+                      width: double.infinity,
+                      height: 44,
+                      decoration: BoxDecoration(
+                          border: Border.all(color: Color(0xff544C4C99)),
+                          borderRadius: BorderRadius.circular(6)),
+                      child: TextField(
+                        decoration: InputDecoration(
+                            border: InputBorder.none,
+                            hintText: '      Kerala,malappuram,peinthalmanna',
+                            suffixIcon: Icon(Icons.my_location),
+                            hintStyle: TextStyle(
+                                color: Color(0xff544C4C),
+                                fontWeight: FontWeight.w500,
+                                fontSize: 14)),
+                      ),
+                    ),
+                  ),
+
+                  //------------------------------------------------------------------------------------------------------
+
+                  Padding(
+                    padding: const EdgeInsets.only(top: 20),
+                    child: Image.asset('assets/image 5.png'),
+                  ),
+
+                  //-----------------------------------save-------------------------------------------------------------------------------------------------------
+
+                  Padding(
+                    padding: const EdgeInsets.only(right: 20, top: 10),
+                    child: Row(
+                      mainAxisAlignment: MainAxisAlignment.end,
+                      children: [
+                        Container(
+                            width: 84,
+                            height: 34,
+                            decoration: BoxDecoration(
+                                color: Color(0xff7047EB),
+                                borderRadius: BorderRadius.circular(5)),
+                            child: Center(
+                              child: Text(
+                                'Save',
+                                style: GoogleFonts.inter(
+                                  fontWeight: FontWeight.w500,
+                                  fontSize: 14,
+                                  color: Colors.white,
+                                ),
+                              ),
+                            ))
+                      ],
+                    ),
+                  )
+                ],
+              ),
+            ),
+          ),
+
+          //======================================shop address===================================================================================
+
+          Padding(
+            padding: const EdgeInsets.only(left: 23, top: 20),
+            child: Text(
+              'Shope Address',
+              style: GoogleFonts.inter(
+                  fontWeight: FontWeight.w500,
+                  fontSize: 15.52,
+                  color: Color(0xff5B5B5B)),
+            ),
+          ),
+
+          Padding(
+            padding: const EdgeInsets.only(left: 13, right: 13, top: 5),
+            child: Container(
+              width: double.infinity,
+              height: 581,
+              decoration: BoxDecoration(
+                  borderRadius: BorderRadius.circular(8),
+                  color: Colors.white,
+                  boxShadow: [
+                    BoxShadow(
+                        color: Colors.black,
+                        blurRadius: 10,
+                        offset: Offset(5, 5)),
+                  ]),
+
+              //-------------------------------------------------------------------------------------------------------------------------------------------------
+
+              child: Column(
+                children: [
+                  Padding(
+                    padding: const EdgeInsets.only(left: 20, top: 20),
+                    child: Row(
+                      children: [
+                        Padding(
+                          padding: const EdgeInsets.only(left: 5),
+                          child: Text(
+                            'Product Per Page',
+                            style: GoogleFonts.inter(
+                                fontWeight: FontWeight.w700,
+                                fontSize: 15,
+                                color: Color(0xff1D1E20)),
+                          ),
+                        ),
+                      ],
+                    ),
+                  ),
+                  Padding(
+                    padding:
+                        const EdgeInsets.only(left: 20, right: 35, top: 10),
+                    child: Container(
+                      width: double.infinity,
+                      height: 44,
+                      decoration: BoxDecoration(
+                          border: Border.all(color: Color(0xff544C4C99)),
+                          borderRadius: BorderRadius.circular(6)),
+                      child: TextField(
+                        decoration: InputDecoration(
+                            border: InputBorder.none,
+                            hintText: '      25',
+                            suffixIcon: Icon(
+                              Icons.keyboard_arrow_down_rounded,
+                              size: 30,
+                            ),
+                            hintStyle: TextStyle(
+                                color: Color(0xff544C4C),
+                                fontWeight: FontWeight.w500,
+                                fontSize: 14)),
+                      ),
+                    ),
+                  ),
+
+                  //------------------------------------------------------------------------------------------------------------------------------------------
+
+                  Padding(
+                    padding: const EdgeInsets.only(left: 20, top: 20),
+                    child: Row(
+                      children: [
+                        Padding(
+                          padding: const EdgeInsets.only(left: 5),
+                          child: Text(
+                            'Store Visibility',
+                            style: GoogleFonts.inter(
+                                fontWeight: FontWeight.w700,
+                                fontSize: 15,
+                                color: Color(0xff1D1E20)),
+                          ),
+                        ),
+                      ],
+                    ),
+                  ),
+                  Padding(
+                    padding:
+                        const EdgeInsets.only(left: 20, right: 35, top: 10),
+                    child: Container(
+                      width: double.infinity,
+                      height: 44,
+                      decoration: BoxDecoration(
+                          border: Border.all(color: Color(0xff544C4C99)),
+                          borderRadius: BorderRadius.circular(6)),
+                      child: TextField(
+                        decoration: InputDecoration(
+                            border: InputBorder.none,
+                            hintText: '      Public',
+                            suffixIcon: Icon(
+                              Icons.keyboard_arrow_down_rounded,
+                              size: 30,
+                            ),
+                            hintStyle: TextStyle(
+                                color: Color(0xff544C4C),
+                                fontWeight: FontWeight.w500,
+                                fontSize: 14)),
+                      ),
+                    ),
+                  ),
+
+                  //------------------------------------------------------------------------------------------------------------------------------------------
+
+                  Padding(
+                    padding: const EdgeInsets.only(left: 20, top: 15),
+                    child: Row(
+                      children: [
+                        Padding(
+                          padding: const EdgeInsets.only(left: 5),
+                          child: Text(
+                            'Terms & conditions',
+                            style: GoogleFonts.inter(
+                                fontWeight: FontWeight.w700,
+                                fontSize: 15,
+                                color: Color(0xff1D1E20)),
+                          ),
+                        ),
+                      ],
+                    ),
+                  ),
+                  Padding(
+                    padding:
+                        const EdgeInsets.only(left: 20, right: 35, top: 10),
+                    child: Container(
+                      width: double.infinity,
+                      height: 116,
+                      decoration: BoxDecoration(
+                          border: Border.all(color: Color(0xff544C4C99)),
+                          borderRadius: BorderRadius.circular(6)),
+                      child: TextField(
+                        decoration: InputDecoration(
+                            border: InputBorder.none,
+                            hintText: '      Write Here',
+                            hintStyle: TextStyle(
+                                color: Color(0xff544C4C),
+                                fontWeight: FontWeight.w500,
+                                fontSize: 14)),
+                      ),
+                    ),
+                  ),
+
+                  //------------------------------------------------------------------------------------------------------------------------------------------
+                  Padding(
+                    padding: const EdgeInsets.only(left: 20, top: 20),
+                    child: Row(
+                      children: [
+                        Padding(
+                          padding: const EdgeInsets.only(left: 5),
+                          child: Text(
+                            'Store Categories',
+                            style: GoogleFonts.inter(
+                                fontWeight: FontWeight.w700,
+                                fontSize: 15,
+                                color: Color(0xff1D1E20)),
+                          ),
+                        ),
+                      ],
+                    ),
+                  ),
+                  Padding(
+                    padding:
+                        const EdgeInsets.only(left: 20, right: 35, top: 10),
+                    child: Container(
+                      width: double.infinity,
+                      height: 44,
+                      decoration: BoxDecoration(
+                          border: Border.all(color: Color(0xff544C4C99)),
+                          borderRadius: BorderRadius.circular(6)),
+                      child: TextField(
+                        decoration: InputDecoration(
+                            border: InputBorder.none,
+                            hintText: '      Electronics',
+                            suffixIcon: Icon(
+                              Icons.keyboard_arrow_down_rounded,
+                              size: 30,
+                            ),
+                            hintStyle: TextStyle(
+                                color: Color(0xff544C4C),
+                                fontWeight: FontWeight.w500,
+                                fontSize: 14)),
+                      ),
+                    ),
+                  ),
+
+                  //----------------------------------------------------------------------------------------------------
+
+                  Padding(
+                    padding: const EdgeInsets.only(right: 20, top: 30),
+                    child: Row(
+                      mainAxisAlignment: MainAxisAlignment.spaceEvenly,
+                      children: [
+                        Container(
+                            width: 79,
+                            height: 31,
+                            decoration: BoxDecoration(
+                                color: Color(0xff7A00E6),
+                                borderRadius: BorderRadius.circular(5)),
+                            child: Center(
+                              child: Text(
+                                'Fashion',
+                                style: GoogleFonts.inter(
+                                  fontWeight: FontWeight.w500,
+                                  fontSize: 14,
+                                  color: Colors.white,
+                                ),
+                              ),
+                            )),
+                        Container(
+                            width: 120,
+                            height: 31,
+                            decoration: BoxDecoration(
+                                color: Color(0xff7A00E6),
+                                borderRadius: BorderRadius.circular(5)),
+                            child: Center(
+                              child: Text(
+                                'Cosmetics',
+                                style: GoogleFonts.inter(
+                                  fontWeight: FontWeight.w500,
+                                  fontSize: 14,
+                                  color: Colors.white,
+                                ),
+                              ),
+                            )),
+                        Container(
+                            width: 74,
+                            height: 31,
+                            decoration: BoxDecoration(
+                                color: Color(0xff7A00E6),
+                                borderRadius: BorderRadius.circular(5)),
+                            child: Center(
+                              child: Text(
+                                'Beauty',
+                                style: GoogleFonts.inter(
+                                  fontWeight: FontWeight.w500,
+                                  fontSize: 14,
+                                  color: Colors.white,
+                                ),
+                              ),
+                            )),
+                      ],
+                    ),
+                  )
+                ],
+              ),
+            ),
+          ),
+
+          //======================================Linked address===================================================================================
+
+          Padding(
+            padding: const EdgeInsets.only(left: 23, top: 20),
+            child: Text(
+              'Shope Address',
+              style: GoogleFonts.inter(
+                  fontWeight: FontWeight.w500,
+                  fontSize: 15.52,
+                  color: Color(0xff5B5B5B)),
+            ),
+          ),
+
+          //---------------------------------------------------------------------------------------------------
+
+          Padding(
+            padding: const EdgeInsets.only(left: 13, right: 13, top: 5),
+            child: Container(
+              height: 581,
+              decoration: BoxDecoration(
+                  borderRadius: BorderRadius.circular(8),
+                  color: Colors.white,
+                  boxShadow: [
+                    BoxShadow(
+                        color: Colors.black,
+                        blurRadius: 10,
+                        offset: Offset(5, 5)),
+                  ]),
+              child: Column(
+                children: [
+                  Padding(
+                    padding:
+                        const EdgeInsets.only(left: 25, right: 70, top: 50),
+                    child: Row(
+                      mainAxisAlignment: MainAxisAlignment.spaceBetween,
+                      children: [
+                        Row(
+                          children: [
+                            Image.asset('assets/globe.png'),
+                            Padding(
+                              padding: const EdgeInsets.only(left: 10),
+                              child: Text(
+                                'Website',
+                                style: GoogleFonts.inter(
+                                    fontWeight: FontWeight.w700,
+                                    fontSize: 15,
+                                    color: Color(0xff1D1E20)),
+                              ),
+                            ),
+                          ],
+                        ),
+                        Text(
+                          '+',
+                          style: GoogleFonts.inter(
+                              fontWeight: FontWeight.w500,
+                              fontSize: 24,
+                              color: Colors.black),
+                        ),
+                      ],
+                    ),
+                  ),
+
+                  //------------------------------------------------------------------------------------------------------------------
+
+                  Padding(
+                    padding:
+                    const EdgeInsets.only(left: 25, right: 70, top: 45),
+                    child: Row(
+                      mainAxisAlignment: MainAxisAlignment.spaceBetween,
+                      children: [
+                        Row(
+                          children: [
+                            Image.asset('assets/WhatsApp.png'),
+                            Padding(
+                              padding: const EdgeInsets.only(left: 10),
+                              child: Text(
+                                'Whatsapp',
+                                style: GoogleFonts.inter(
+                                    fontWeight: FontWeight.w700,
+                                    fontSize: 15,
+                                    color: Color(0xff1D1E20)),
+                              ),
+                            ),
+                          ],
+                        ),
+                        Text(
+                          '+',
+                          style: GoogleFonts.inter(
+                              fontWeight: FontWeight.w500,
+                              fontSize: 24,
+                              color: Colors.black),
+                        ),
+                      ],
+                    ),
+                  ),
+
+                  //------------------------------------------------------------------------------------------------------------------
+
+                  Padding(
+                    padding:
+                    const EdgeInsets.only(left: 25, right: 70, top: 45),
+                    child: Row(
+                      mainAxisAlignment: MainAxisAlignment.spaceBetween,
+                      children: [
+                        Row(
+                          children: [
+                            Image.asset('assets/Facebook (2).png'),
+                            Padding(
+                              padding: const EdgeInsets.only(left: 10),
+                              child: Text(
+                                'Facebook',
+                                style: GoogleFonts.inter(
+                                    fontWeight: FontWeight.w700,
+                                    fontSize: 15,
+                                    color: Color(0xff1D1E20)),
+                              ),
+                            ),
+                          ],
+                        ),
+                        Text(
+                          '+',
+                          style: GoogleFonts.inter(
+                              fontWeight: FontWeight.w500,
+                              fontSize: 24,
+                              color: Colors.black),
+                        ),
+                      ],
+                    ),
+                  ),
+
+                  //------------------------------------------------------------------------------------------------------------------
+
+                  Padding(
+                    padding:
+                    const EdgeInsets.only(left: 25, right: 70, top: 45),
+                    child: Row(
+                      mainAxisAlignment: MainAxisAlignment.spaceBetween,
+                      children: [
+                        Row(
+                          children: [
+                            Image.asset('assets/Twitter.png'),
+                            Padding(
+                              padding: const EdgeInsets.only(left: 10),
+                              child: Text(
+                                'Twitter',
+                                style: GoogleFonts.inter(
+                                    fontWeight: FontWeight.w700,
+                                    fontSize: 15,
+                                    color: Color(0xff1D1E20)),
+                              ),
+                            ),
+                          ],
+                        ),
+                        Text(
+                          '+',
+                          style: GoogleFonts.inter(
+                              fontWeight: FontWeight.w500,
+                              fontSize: 24,
+                              color: Colors.black),
+                        ),
+                      ],
+                    ),
+                  ),
+
+                  //------------------------------------------------------------------------------------------------------------------
+
+                  Padding(
+                    padding:
+                    const EdgeInsets.only(left: 25, right: 70, top: 45),
+                    child: Row(
+                      mainAxisAlignment: MainAxisAlignment.spaceBetween,
+                      children: [
+                        Row(
+                          children: [
+                            Image.asset('assets/Instagram.png'),
+                            Padding(
+                              padding: const EdgeInsets.only(left: 10),
+                              child: Text(
+                                'Instagram',
+                                style: GoogleFonts.inter(
+                                    fontWeight: FontWeight.w700,
+                                    fontSize: 15,
+                                    color: Color(0xff1D1E20)),
+                              ),
+                            ),
+                          ],
+                        ),
+                        Text(
+                          '+',
+                          style: GoogleFonts.inter(
+                              fontWeight: FontWeight.w500,
+                              fontSize: 24,
+                              color: Colors.black),
+                        ),
+                      ],
+                    ),
+                  ),
+
+                  //------------------------------------------------------------------------------------------------------------------
+
+                  Padding(
+                    padding:
+                    const EdgeInsets.only(left: 25, right: 70, top: 45),
+                    child: Row(
+                      mainAxisAlignment: MainAxisAlignment.spaceBetween,
+                      children: [
+                        Row(
+                          children: [
+                            Image.asset('assets/Headphones_fill.png'),
+                            Padding(
+                              padding: const EdgeInsets.only(left: 10),
+                              child: Text(
+                                'Customer Service',
+                                style: GoogleFonts.inter(
+                                    fontWeight: FontWeight.w700,
+                                    fontSize: 15,
+                                    color: Color(0xff1D1E20)),
+                              ),
+                            ),
+                          ],
+                        ),
+                        Text(
+                          '+',
+                          style: GoogleFonts.inter(
+                              fontWeight: FontWeight.w500,
+                              fontSize: 24,
+                              color: Colors.black),
+                        ),
+                      ],
+                    ),
+                  ),
+
+                  //------------------------------------------------------------------------------------------------------------------
+
+                  Padding(
+                    padding: const EdgeInsets.only(right: 20, top: 45),
+                    child: Row(
+                      mainAxisAlignment: MainAxisAlignment.end,
+                      children: [
+                        Container(
+                            width: 84,
+                            height: 34,
+                            decoration: BoxDecoration(
+                                color: Color(0xff7047EB),
+                                borderRadius: BorderRadius.circular(5)),
+                            child: Center(
+                              child: Text(
+                                'Save',
+                                style: GoogleFonts.inter(
+                                  fontWeight: FontWeight.w500,
+                                  fontSize: 14,
+                                  color: Colors.white,
+                                ),
+                              ),
+                            ))
+                      ],
+                    ),
+                  )
+
+                ],
+              ),
+            ),
+          )
         ],
       ),
     );

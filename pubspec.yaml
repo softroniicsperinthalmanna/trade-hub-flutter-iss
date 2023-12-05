@@ -67,6 +67,13 @@ flutter:
      - assets/Img_box.png
      - assets/Camera.png
      - assets/Group 12655.png
+     - assets/image 5.png
+     - assets/globe.png
+     - assets/WhatsApp.png
+     - assets/Facebook (2).png
+     - assets/Twitter.png
+     - assets/Instagram.png
+     - assets/Headphones_fill.png
   # An image asset can refer to one or more resolution-specific "variants", see
   # https://flutter.dev/assets-and-images/#resolution-aware
 
