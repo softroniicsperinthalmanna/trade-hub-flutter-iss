@@ -13,20 +13,20 @@ class _ShopsigninnnState extends State<Shopsigninnn> {
   Widget build(BuildContext context) {
     return Scaffold(
       backgroundColor: Color(0xffFF6565),
-      appBar: AppBar(
-        backgroundColor: Color(0xffFF6565),
-        title: Center(
-          child: Text(
-            'Shop Details',
-            style: GoogleFonts.lexendDeca(
-                fontWeight: FontWeight.w600, fontSize: 28, color: Colors.black),
-          ),
-        ),
-      ),
+
       body: ListView(
         children: [
+          Row(mainAxisAlignment: MainAxisAlignment.center,
+            children: [
+              Text(
+                'Shop Details',
+                style: GoogleFonts.lexendDeca(
+                    fontWeight: FontWeight.w600, fontSize: 28, color: Colors.black),
+              ),
+            ],
+          ),
           Padding(
-              padding: const EdgeInsets.only(left: 13, right: 13),
+              padding: const EdgeInsets.only(left: 13, right: 13,top: 20),
               child: Stack(
                 children: [
                   Container(
@@ -1241,6 +1241,13 @@ class _ShopsigninnnState extends State<Shopsigninnn> {
                 ],
               ),
             ),
+          ),
+
+          //======================submit===============================================================================
+          
+          Padding(
+            padding: const EdgeInsets.only(top: 30,bottom: 50),
+            child: Image.asset('assets/Group 12680.png'),
           )
         ],
       ),

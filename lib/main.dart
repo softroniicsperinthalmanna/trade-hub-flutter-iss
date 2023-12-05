@@ -1,4 +1,7 @@
 import 'package:flutter/material.dart';
+import 'package:trade_hub/My%20order.dart';
+import 'package:trade_hub/allen%20solly%201.dart';
+import 'package:trade_hub/allen%20solly%202.dart';
 import 'package:trade_hub/shop%20sign%20in.dart';
 
 import 'navigation bar.dart';
@@ -34,7 +37,7 @@ class MyApp extends StatelessWidget {
         colorScheme: ColorScheme.fromSeed(seedColor: Colors.deepPurple),
         useMaterial3: true,
       ),
-      home: Shopsigninnn()
+      home: Myorderrr()
     );
   }
 }
