@@ -1,7 +1,10 @@
 import 'package:flutter/material.dart';
 import 'package:trade_hub/My%20order.dart';
+import 'package:trade_hub/active.dart';
 import 'package:trade_hub/allen%20solly%201.dart';
 import 'package:trade_hub/allen%20solly%202.dart';
+import 'package:trade_hub/cancelled.dart';
+import 'package:trade_hub/completed.dart';
 import 'package:trade_hub/shop%20sign%20in.dart';
 
 import 'navigation bar.dart';
