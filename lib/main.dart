@@ -5,7 +5,15 @@ import 'package:trade_hub/allen%20solly%201.dart';
 import 'package:trade_hub/allen%20solly%202.dart';
 import 'package:trade_hub/cancelled.dart';
 import 'package:trade_hub/completed.dart';
+import 'package:trade_hub/contact%20us.dart';
+import 'package:trade_hub/edit%20profile.dart';
+import 'package:trade_hub/faq.dart';
+import 'package:trade_hub/help%20center.dart';
+import 'package:trade_hub/invite%20friends.dart';
+import 'package:trade_hub/passwordmanager.dart';
+import 'package:trade_hub/privacy%20policy.dart';
 import 'package:trade_hub/profile.dart';
+import 'package:trade_hub/settings.dart';
 import 'package:trade_hub/shop%20sign%20in.dart';
 
 import 'navigation bar.dart';
@@ -41,7 +49,7 @@ class MyApp extends StatelessWidget {
         colorScheme: ColorScheme.fromSeed(seedColor: Colors.deepPurple),
         useMaterial3: true,
       ),
-      home: Profileee()
+      home: Invitefriendsss()
     );
   }
 }

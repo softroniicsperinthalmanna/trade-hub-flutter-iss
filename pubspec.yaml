@@ -99,6 +99,20 @@ flutter:
      - assets/Bag.png
      - assets/Group_add_light.png
      - assets/Setting_line.png
+     - assets/bell.png
+     - assets/Wallet_duotone_line.png
+     - assets/Ellipse (2).png
+     - assets/Ellipse (3).png
+     - assets/View_hide.png
+     - assets/Ellipse (5).png
+     - assets/Ellipse (4).png
+     - assets/Ellipse (6).png
+     - assets/Ellipse (7).png
+     - assets/Ellipse (8).png
+     - assets/Ellipse (9).png
+     - assets/Ellipse (10).png
+     - assets/Ellipse (11).png
+     - assets/Ellipse (12).png
   # An image asset can refer to one or more resolution-specific "variants", see
   # https://flutter.dev/assets-and-images/#resolution-aware
 

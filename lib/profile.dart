@@ -19,7 +19,7 @@ class _ProfileeeState extends State<Profileee> {
             mainAxisAlignment: MainAxisAlignment.center,
             children: [
               Text(
-                'Allen Solly',
+                'Profile',
                 style: GoogleFonts.lexendDeca(
                     fontWeight: FontWeight.w400,
                     fontSize: 27,
@@ -82,7 +82,7 @@ class _ProfileeeState extends State<Profileee> {
                         offset: Offset(5, 5)),
                   ]),
               child: Padding(
-                padding: const EdgeInsets.only(left: 20,top: 37),
+                padding: const EdgeInsets.only(left: 20, top: 37),
                 child: Column(
                   children: [
                     Row(
@@ -240,10 +240,142 @@ class _ProfileeeState extends State<Profileee> {
                     ),
 
                     //---------------------------------------------------------------------------------------------------------------
-
-
                   ],
                 ),
+              ),
+            ),
+          ),
+
+          //========================= more ============================================================================
+
+          Padding(
+            padding: const EdgeInsets.only(left: 17, top: 15),
+            child: Text(
+              'More',
+              style: GoogleFonts.inter(
+                  fontWeight: FontWeight.w400,
+                  fontSize: 15,
+                  color: Color(0xff1D1E20)),
+            ),
+          ),
+
+          //==========================container=============================================================================
+
+          Padding(
+            padding:
+                const EdgeInsets.only(left: 29, right: 29, top: 20, bottom: 50),
+            child: Container(
+              height: 230,
+              decoration: BoxDecoration(
+                  borderRadius: BorderRadius.circular(8),
+                  color: Colors.white,
+                  boxShadow: [
+                    BoxShadow(
+                        color: Colors.grey,
+                        blurRadius: 10,
+                        offset: Offset(5, 5)),
+                  ]),
+              child: Padding(
+                padding: const EdgeInsets.only(left: 20,top: 10),
+                child: Column(children: [
+
+                  Padding(
+                    padding: const EdgeInsets.only(top: 25),
+                    child: Row(
+                      children: [
+                        Icon(Icons.lock_outline),
+                        Padding(
+                          padding: const EdgeInsets.only(left: 20),
+                          child: Column(
+                            children: [
+                              Text(
+                                'Privacy Policy',
+                                style: GoogleFonts.inter(
+                                    fontWeight: FontWeight.w400,
+                                    fontSize: 15,
+                                    color: Color(0xff1D1E20)),
+                              ),
+                              Text(
+                                'Privacy policy        ',
+                                style: GoogleFonts.dmSans(
+                                    fontWeight: FontWeight.w400,
+                                    fontSize: 11,
+                                    color: Color(0xffABABAB)),
+                              ),
+                            ],
+                          ),
+                        )
+                      ],
+                    ),
+                  ),
+
+                  //---------------------------------------------------------------------------------------------------------------
+
+                  Padding(
+                    padding: const EdgeInsets.only(top: 25),
+                    child: Row(
+                      children: [
+                        Icon(Icons.info_outline),
+                        Padding(
+                          padding: const EdgeInsets.only(left: 20),
+                          child: Column(
+                            children: [
+                              Text(
+                                'Help and support',
+                                style: GoogleFonts.inter(
+                                    fontWeight: FontWeight.w400,
+                                    fontSize: 15,
+                                    color: Color(0xff1D1E20)),
+                              ),
+                              Text(
+                                'seek help                       ',
+                                style: GoogleFonts.dmSans(
+                                    fontWeight: FontWeight.w400,
+                                    fontSize: 11,
+                                    color: Color(0xffABABAB)),
+                              ),
+                            ],
+                          ),
+                        )
+                      ],
+                    ),
+                  ),
+
+                  //---------------------------------------------------------------------------------------------------------------
+
+                  Padding(
+                    padding: const EdgeInsets.only(top: 25),
+                    child: Row(
+                      children: [
+                        Icon(Icons.logout),
+                        Padding(
+                          padding: const EdgeInsets.only(left: 20),
+                          child: Column(
+                            children: [
+                              Text(
+                                'Log out                      ',
+                                style: GoogleFonts.inter(
+                                    fontWeight: FontWeight.w400,
+                                    fontSize: 15,
+                                    color: Color(0xff1D1E20)),
+                              ),
+                              Text(
+                                'Further secure your account',
+                                style: GoogleFonts.dmSans(
+                                    fontWeight: FontWeight.w400,
+                                    fontSize: 11,
+                                    color: Color(0xffABABAB)),
+                              ),
+                            ],
+                          ),
+                        )
+                      ],
+                    ),
+                  ),
+
+                  //---------------------------------------------------------------------------------------------------------------
+
+                ]),
               ),
             ),
           )
