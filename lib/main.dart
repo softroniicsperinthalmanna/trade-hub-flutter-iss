@@ -12,15 +12,21 @@ import 'package:trade_hub/contact%20us.dart';
 import 'package:trade_hub/edit%20profile.dart';
 import 'package:trade_hub/faq.dart';
 import 'package:trade_hub/help%20center.dart';
+import 'package:trade_hub/home.dart';
 import 'package:trade_hub/invite%20friends.dart';
 import 'package:trade_hub/iphone%2032.dart';
 import 'package:trade_hub/iphone%2034.dart';
 import 'package:trade_hub/ipone%2039.dart';
+import 'package:trade_hub/log%20in.dart';
+import 'package:trade_hub/moments.dart';
+import 'package:trade_hub/otp.dart';
 import 'package:trade_hub/passwordmanager.dart';
 import 'package:trade_hub/privacy%20policy.dart';
 import 'package:trade_hub/profile.dart';
 import 'package:trade_hub/settings.dart';
 import 'package:trade_hub/shop%20sign%20in.dart';
+import 'package:trade_hub/sign%20in.dart';
+import 'package:trade_hub/welcome.dart';
 
 import 'navigation bar.dart';
 
@@ -55,7 +61,7 @@ class MyApp extends StatelessWidget {
         colorScheme: ColorScheme.fromSeed(seedColor: Colors.deepPurple),
         useMaterial3: true,
       ),
-      home: Iphone3999()
+      home: Momentsss()
     );
   }
 }
