@@ -14,6 +14,8 @@ import 'package:trade_hub/faq.dart';
 import 'package:trade_hub/help%20center.dart';
 import 'package:trade_hub/invite%20friends.dart';
 import 'package:trade_hub/iphone%2032.dart';
+import 'package:trade_hub/iphone%2034.dart';
+import 'package:trade_hub/ipone%2039.dart';
 import 'package:trade_hub/passwordmanager.dart';
 import 'package:trade_hub/privacy%20policy.dart';
 import 'package:trade_hub/profile.dart';
@@ -53,7 +55,7 @@ class MyApp extends StatelessWidget {
         colorScheme: ColorScheme.fromSeed(seedColor: Colors.deepPurple),
         useMaterial3: true,
       ),
-      home: Iphone3222()
+      home: Iphone3999()
     );
   }
 }
