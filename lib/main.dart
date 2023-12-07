@@ -1,15 +1,19 @@
 import 'package:flutter/material.dart';
 import 'package:trade_hub/My%20order.dart';
+import 'package:trade_hub/active%20w.dart';
 import 'package:trade_hub/active.dart';
 import 'package:trade_hub/allen%20solly%201.dart';
 import 'package:trade_hub/allen%20solly%202.dart';
+import 'package:trade_hub/cancelled%20w.dart';
 import 'package:trade_hub/cancelled.dart';
+import 'package:trade_hub/completed%20w.dart';
 import 'package:trade_hub/completed.dart';
 import 'package:trade_hub/contact%20us.dart';
 import 'package:trade_hub/edit%20profile.dart';
 import 'package:trade_hub/faq.dart';
 import 'package:trade_hub/help%20center.dart';
 import 'package:trade_hub/invite%20friends.dart';
+import 'package:trade_hub/iphone%2032.dart';
 import 'package:trade_hub/passwordmanager.dart';
 import 'package:trade_hub/privacy%20policy.dart';
 import 'package:trade_hub/profile.dart';
@@ -49,7 +53,7 @@ class MyApp extends StatelessWidget {
         colorScheme: ColorScheme.fromSeed(seedColor: Colors.deepPurple),
         useMaterial3: true,
       ),
-      home: Invitefriendsss()
+      home: Iphone3222()
     );
   }
 }

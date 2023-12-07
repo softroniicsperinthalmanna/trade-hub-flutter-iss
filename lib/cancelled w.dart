@@ -1,32 +1,36 @@
 import 'package:flutter/material.dart';
 import 'package:google_fonts/google_fonts.dart';
 
-class Completeddd extends StatefulWidget {
-  const Completeddd({super.key});
+class Cancelledwww extends StatefulWidget {
+  const Cancelledwww({super.key});
 
   @override
-  State<Completeddd> createState() => _CompletedddState();
+  State<Cancelledwww> createState() => _CancelledwwwState();
 }
 
-class _CompletedddState extends State<Completeddd> {
+class _CancelledwwwState extends State<Cancelledwww> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      backgroundColor: Color(0xffFF6565),
       body: ListView(
         children: [
           Padding(
-            padding: const EdgeInsets.only(left: 20,top: 20),
+            padding: const EdgeInsets.only(left: 20, top: 20),
             child: Row(
               children: [
-                Image.asset('assets/Rectangle 18828 (2).png'),
+                Container(
+                  width: 83,
+                  height: 83,
+                  color: Colors.white,
+                  child: Image.asset('assets/image 5 (1).png'),
+                ),
                 Padding(
                   padding: const EdgeInsets.only(left: 15),
                   child: Column(
                     crossAxisAlignment: CrossAxisAlignment.start,
                     children: [
                       Text(
-                        'IPhone',
+                        'TMA-2 HD wirless',
                         style: GoogleFonts.inter(
                             fontWeight: FontWeight.w400,
                             fontSize: 19,
@@ -35,7 +39,7 @@ class _CompletedddState extends State<Completeddd> {
                       Row(
                         children: [
                           Text(
-                            '₹1,45,000 ',
+                            '₹645     ',
                             style: GoogleFonts.inter(
                                 fontWeight: FontWeight.w400,
                                 fontSize: 16,
@@ -47,21 +51,21 @@ class _CompletedddState extends State<Completeddd> {
                             color: Color(0xffFFC120),
                           ),
                           Text(
-                            ' 4.9  896 Reviews ',
+                            ' 4.6  86 Reviews ',
                             style: GoogleFonts.dmSans(
                                 fontWeight: FontWeight.w400,
                                 fontSize: 10,
                                 color: Color(0xff000000)),
                           ),
                           Container(
-                            width: 90,
+                            width: 69,
                             height: 29,
                             decoration: BoxDecoration(
                                 color: Color(0xffB7A6FC),
                                 borderRadius: BorderRadius.circular(70)),
                             child: Center(
                               child: Text(
-                                'check review',
+                                'Re-Order',
                                 style: GoogleFonts.poppins(
                                     fontWeight: FontWeight.w600,
                                     fontSize: 12,
@@ -71,7 +75,6 @@ class _CompletedddState extends State<Completeddd> {
                           )
                         ],
                       ),
-
                     ],
                   ),
                 )
@@ -79,20 +82,20 @@ class _CompletedddState extends State<Completeddd> {
             ),
           ),
 
-          //========================================================================================================================
+          //======================================================================================================================
 
           Padding(
-            padding: const EdgeInsets.only(left: 20,top: 20),
+            padding: const EdgeInsets.only(left: 20, top: 20),
             child: Row(
               children: [
-                Image.asset('assets/Rectangle 18828 (3).png'),
+                Image.asset('assets/Rectangle 18828 (1).png'),
                 Padding(
                   padding: const EdgeInsets.only(left: 15),
                   child: Column(
                     crossAxisAlignment: CrossAxisAlignment.start,
                     children: [
                       Text(
-                        'JBL Wirless headset ',
+                        'NIKEY',
                         style: GoogleFonts.inter(
                             fontWeight: FontWeight.w400,
                             fontSize: 19,
@@ -101,7 +104,7 @@ class _CompletedddState extends State<Completeddd> {
                       Row(
                         children: [
                           Text(
-                            '₹6,000 ',
+                            '₹3,000  ',
                             style: GoogleFonts.inter(
                                 fontWeight: FontWeight.w400,
                                 fontSize: 16,
@@ -113,21 +116,21 @@ class _CompletedddState extends State<Completeddd> {
                             color: Color(0xffFFC120),
                           ),
                           Text(
-                            ' 4.9  98 Reviews          ',
+                            ' 4.8  86 Reviews ',
                             style: GoogleFonts.dmSans(
                                 fontWeight: FontWeight.w400,
                                 fontSize: 10,
                                 color: Color(0xff000000)),
                           ),
                           Container(
-                            width: 90,
+                            width: 69,
                             height: 29,
                             decoration: BoxDecoration(
                                 color: Color(0xffB7A6FC),
                                 borderRadius: BorderRadius.circular(70)),
                             child: Center(
                               child: Text(
-                                'check review',
+                                'Re-Order',
                                 style: GoogleFonts.poppins(
                                     fontWeight: FontWeight.w600,
                                     fontSize: 12,
@@ -137,14 +140,12 @@ class _CompletedddState extends State<Completeddd> {
                           )
                         ],
                       ),
-
                     ],
                   ),
                 )
               ],
             ),
           ),
-
         ],
       ),
     );

@@ -16,7 +16,7 @@ class _CancelledddState extends State<Cancelleddd> {
       body: ListView(
         children: [
           Padding(
-            padding: const EdgeInsets.only(left: 20),
+            padding: const EdgeInsets.only(left: 20,top: 20),
             child: Row(
               children: [
                 Container(

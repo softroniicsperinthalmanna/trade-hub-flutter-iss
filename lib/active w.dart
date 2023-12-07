@@ -1,22 +1,21 @@
 import 'package:flutter/material.dart';
 import 'package:google_fonts/google_fonts.dart';
 
-class Activeee extends StatefulWidget {
-  const Activeee({super.key});
+class Activewww extends StatefulWidget {
+  const Activewww({super.key});
 
   @override
-  State<Activeee> createState() => _ActiveeeState();
+  State<Activewww> createState() => _ActivewwwState();
 }
 
-class _ActiveeeState extends State<Activeee> {
+class _ActivewwwState extends State<Activewww> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      backgroundColor: Color(0xffFF6565),
       body: ListView(
         children: [
           Padding(
-            padding: const EdgeInsets.only(left: 20,top: 20),
+            padding: const EdgeInsets.only(left: 20, top: 20),
             child: Row(
               children: [
                 Image.asset('assets/Rectangle 18828.png'),
@@ -71,7 +70,6 @@ class _ActiveeeState extends State<Activeee> {
                           )
                         ],
                       ),
-
                     ],
                   ),
                 )

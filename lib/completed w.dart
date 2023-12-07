@@ -1,22 +1,21 @@
 import 'package:flutter/material.dart';
 import 'package:google_fonts/google_fonts.dart';
 
-class Completeddd extends StatefulWidget {
-  const Completeddd({super.key});
+class Completedwww extends StatefulWidget {
+  const Completedwww({super.key});
 
   @override
-  State<Completeddd> createState() => _CompletedddState();
+  State<Completedwww> createState() => _CompletedwwwState();
 }
 
-class _CompletedddState extends State<Completeddd> {
+class _CompletedwwwState extends State<Completedwww> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      backgroundColor: Color(0xffFF6565),
       body: ListView(
         children: [
           Padding(
-            padding: const EdgeInsets.only(left: 20,top: 20),
+            padding: const EdgeInsets.only(left: 20, top: 20),
             child: Row(
               children: [
                 Image.asset('assets/Rectangle 18828 (2).png'),
@@ -61,7 +60,7 @@ class _CompletedddState extends State<Completeddd> {
                                 borderRadius: BorderRadius.circular(70)),
                             child: Center(
                               child: Text(
-                                'check review',
+                                'Leave review',
                                 style: GoogleFonts.poppins(
                                     fontWeight: FontWeight.w600,
                                     fontSize: 12,
@@ -71,7 +70,6 @@ class _CompletedddState extends State<Completeddd> {
                           )
                         ],
                       ),
-
                     ],
                   ),
                 )
@@ -82,7 +80,7 @@ class _CompletedddState extends State<Completeddd> {
           //========================================================================================================================
 
           Padding(
-            padding: const EdgeInsets.only(left: 20,top: 20),
+            padding: const EdgeInsets.only(left: 20, top: 20),
             child: Row(
               children: [
                 Image.asset('assets/Rectangle 18828 (3).png'),
@@ -127,7 +125,7 @@ class _CompletedddState extends State<Completeddd> {
                                 borderRadius: BorderRadius.circular(70)),
                             child: Center(
                               child: Text(
-                                'check review',
+                                'Leave review',
                                 style: GoogleFonts.poppins(
                                     fontWeight: FontWeight.w600,
                                     fontSize: 12,
@@ -137,14 +135,12 @@ class _CompletedddState extends State<Completeddd> {
                           )
                         ],
                       ),
-
                     ],
                   ),
                 )
               ],
             ),
           ),
-
         ],
       ),
     );
