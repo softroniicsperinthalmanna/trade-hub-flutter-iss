@@ -36,6 +36,7 @@ dependencies:
   # Use with the CupertinoIcons class for iOS style icons.
   cupertino_icons: ^1.0.2
   google_fonts: ^6.1.0
+  floating_navbar: ^2.0.2
 
 dev_dependencies:
   flutter_test:
@@ -140,6 +141,25 @@ flutter:
      - assets/Rectangle 6 (1).png
      - assets/Rectangle 8 (1).png
      - assets/Ellipse 12.png
+     - assets/Rectangle 4227.png
+     - assets/Vector (3).png
+     - assets/Vector (4).png
+     - assets/Ellipse 13.png
+     - assets/Rectangle 4228.png
+     - assets/Avatar.png
+     - assets/Avatar (1).png
+     - assets/Avatar (2).png
+     - assets/Avatar (3).png
+     - assets/Avatar (5).png
+     - assets/Avatar (6).png
+     - assets/Avatar (7).png
+     - assets/Avatar (8).png
+     - assets/Rectangle 18818 (1).png
+     - assets/Group 12577.png
+     - assets/Group 12578.png
+     - assets/Group 12579.png
+     - assets/Rectangle 18823 (2).png
+     - assets/1-home-2.png
   # An image asset can refer to one or more resolution-specific "variants", see
   # https://flutter.dev/assets-and-images/#resolution-aware
 

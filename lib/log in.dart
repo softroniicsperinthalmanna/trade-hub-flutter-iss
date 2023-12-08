@@ -47,56 +47,50 @@ class _LoginnnState extends State<Loginnn> {
                     ),
                     //--------------------------------------------------------------------------------------------------------------
 
+
                     Padding(
-                      padding:
-                          const EdgeInsets.only(left: 50, right: 50, top: 10),
-                      child: Positioned(
-                        child: Container(
-                          width: double.infinity,
-                          height: 51,
-                          decoration: ShapeDecoration(
-                            color: Color(0xCEFFD465),
-                            shape: RoundedRectangleBorder(
-                              borderRadius: BorderRadius.circular(23),
-                            ),
-                          ),
-                          child: TextField(
-                            decoration: InputDecoration(
-                                border: InputBorder.none,
-                                hintText: '      username',
-                                hintStyle: TextStyle(
-                                    color: Color(0xff544C4C),
-                                    fontWeight: FontWeight.w500,
-                                    fontSize: 14)),
-                          ),
+                      padding: const EdgeInsets.only(
+                          left: 50, right: 50, top: 10, bottom: 0),
+                      child: Container(
+                        width: double.infinity,
+                        height: 51,
+                        decoration: BoxDecoration(
+                          borderRadius: BorderRadius.circular(23),
+                          color:Colors.white.withOpacity(0.5),
+                        ),
+                        child: TextField(
+                          decoration: InputDecoration(
+                              border: InputBorder.none,
+                              hintText: '      password',
+                              hintStyle: TextStyle(
+                                  color: Color(0xff544C4C),
+                                  fontWeight: FontWeight.w500,
+                                  fontSize: 14)),
                         ),
                       ),
                     ),
+
 
                     //--------------------------------------------------------------------------------------------------------------
 
                     Padding(
                       padding: const EdgeInsets.only(
                           left: 50, right: 50, top: 10, bottom: 50),
-                      child: Positioned(
-                        child: Container(
-                          width: double.infinity,
-                          height: 51,
-                          decoration: ShapeDecoration(
-                            color: Color(0xCEFFD465),
-                            shape: RoundedRectangleBorder(
-                              borderRadius: BorderRadius.circular(23),
-                            ),
-                          ),
-                          child: TextField(
-                            decoration: InputDecoration(
-                                border: InputBorder.none,
-                                hintText: '      password',
-                                hintStyle: TextStyle(
-                                    color: Color(0xff544C4C),
-                                    fontWeight: FontWeight.w500,
-                                    fontSize: 14)),
-                          ),
+                      child: Container(
+                        width: double.infinity,
+                        height: 51,
+                        decoration: BoxDecoration(
+                          borderRadius: BorderRadius.circular(23),
+                          color: Colors.white.withOpacity(0.5),
+                        ),
+                        child: TextField(
+                          decoration: InputDecoration(
+                              border: InputBorder.none,
+                              hintText: '      password',
+                              hintStyle: TextStyle(
+                                  color: Color(0xff544C4C),
+                                  fontWeight: FontWeight.w500,
+                                  fontSize: 14)),
                         ),
                       ),
                     ),

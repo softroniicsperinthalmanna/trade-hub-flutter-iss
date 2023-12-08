@@ -170,7 +170,7 @@ class _Iphone3444State extends State<Iphone3444> {
             //================================================================================================
 
             Padding(
-              padding: const EdgeInsets.only(left: 19, right: 19, top: 19),
+              padding: const EdgeInsets.only(left: 19, right: 19, top: 19,bottom: 30),
               child: Container(
                 width: double.infinity,
                 height: 297,
@@ -315,58 +315,48 @@ class _Iphone3444State extends State<Iphone3444> {
 
             //===================================================================================================================
 
-            Padding(
-              padding: const EdgeInsets.only(top: 50),
-              child: Container(
-                width: double.infinity,
-                height: 130,
-                color: Color(0x4CB7A6FC),
-                child: Padding(
-                  padding: const EdgeInsets.only(left: 10,right: 10),
-                  child: Row(mainAxisAlignment: MainAxisAlignment.spaceBetween,
-                    children: [
-                      Column(mainAxisAlignment: MainAxisAlignment.center,
-                        children: [
-                          Text(
-                            'Total Amount',
-                            style: GoogleFonts.lexendDeca(
-                                fontWeight: FontWeight.w400,
-                                fontSize: 15,
-                                color: Color(0xff807F7F)),
-                          ),
-                          Text(
-                            '₹1,45,000',
-                            style: GoogleFonts.lexendDeca(
-                                fontWeight: FontWeight.w600,
-                                fontSize: 18,
-                                color: Colors.black),
-                          ),
-                        ],
-                      ),
-                      Container(
-                        width: 246,
-                        height: 58,
-                        decoration: BoxDecoration(
-                            borderRadius: BorderRadius.circular(10),
-                            color: Color(0xFFB7A6FC)),
-                        child:  Center(
-                          child: Text(
-                            'Continue',
-                            style: GoogleFonts.inter(
-                                fontWeight: FontWeight.w500,
-                                fontSize: 25,
-                                color: Colors.white),
-                          ),
-                        ),
-                      )
-                    ],
-                  ),
-                ),
-              ),
-            )
           ],
         ),
       ),
+      bottomNavigationBar: BottomAppBar(
+        child: Row(mainAxisAlignment: MainAxisAlignment.spaceBetween,
+        children: [
+          Column(mainAxisAlignment: MainAxisAlignment.center,
+            children: [
+              Text(
+                'Total Amount',
+                style: GoogleFonts.lexendDeca(
+                    fontWeight: FontWeight.w400,
+                    fontSize: 15,
+                    color: Color(0xff807F7F)),
+              ),
+              Text(
+                '₹1,45,000',
+                style: GoogleFonts.lexendDeca(
+                    fontWeight: FontWeight.w600,
+                    fontSize: 18,
+                    color: Colors.black),
+              ),
+            ],
+          ),
+          Container(
+            width: 246,
+            height: 58,
+            decoration: BoxDecoration(
+                borderRadius: BorderRadius.circular(10),
+                color: Color(0xFFB7A6FC)),
+            child:  Center(
+              child: Text(
+                'Continue',
+                style: GoogleFonts.inter(
+                    fontWeight: FontWeight.w500,
+                    fontSize: 25,
+                    color: Colors.white),
+              ),
+            ),
+          )
+        ],
+      ),),
     );
   }
 }
