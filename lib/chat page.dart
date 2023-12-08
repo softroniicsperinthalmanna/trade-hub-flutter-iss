@@ -17,16 +17,20 @@ class _ChatpageeeState extends State<Chatpageee> {
       body: ListView(
         children: [
           Padding(
-            padding: const EdgeInsets.only(left: 20, right: 20),
+            padding: const EdgeInsets.only(left: 20, right: 20,top: 20),
             child: Row(
               mainAxisAlignment: MainAxisAlignment.spaceBetween,
               children: [
                 Row(
                   children: [
-                    Icon(
-                      Icons.arrow_back_ios,
-                      size: 20,
-                      color: Colors.white,
+                    InkWell(onTap: () {
+                      Navigator.pop(context);
+                    },
+                      child: Icon(
+                        Icons.arrow_back_ios,
+                        size: 20,
+                        color: Colors.white,
+                      ),
                     ),
                     Padding(
                       padding: const EdgeInsets.only(left: 10),
@@ -264,7 +268,7 @@ class _ChatpageeeState extends State<Chatpageee> {
         ],
       ),
       bottomNavigationBar: BottomAppBar(
-        shadowColor: null,
+      
         surfaceTintColor: Colors.white,
         height: 100,
         child: Row(mainAxisAlignment:  MainAxisAlignment.spaceEvenly,

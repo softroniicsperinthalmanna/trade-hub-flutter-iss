@@ -173,7 +173,7 @@ class _HomeeeState extends State<Homeee> {
 //==============================================================================================================================================
 
         Padding(
-          padding: const EdgeInsets.only(left: 20,top: 10,bottom: 30),
+          padding: const EdgeInsets.only(left: 20,top: 10,bottom: 100),
           child: SingleChildScrollView(scrollDirection: Axis.horizontal,
             child: Row(
               children: [

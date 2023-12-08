@@ -1,5 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:google_fonts/google_fonts.dart';
+import 'package:trade_hub/log%20in.dart';
+import 'package:trade_hub/navigation%20bar.dart';
 
 class Otppp extends StatefulWidget {
   const Otppp({super.key});
@@ -140,19 +142,25 @@ class _OtpppState extends State<Otppp> {
                   ),
                   Row(mainAxisAlignment: MainAxisAlignment.center,
                     children: [
-                      Container(
-                        width: 259,
-                        height: 39,
-                        decoration: BoxDecoration(
-                            color: Color(0xff7A00E6),
-                            borderRadius: BorderRadius.circular(10)),
-                        child:  Center(
-                          child: Text(
-                            'Submit',
-                            style: GoogleFonts.poppins(
-                                fontWeight: FontWeight.w700,
-                                fontSize: 15,
-                                color: Colors.white),
+                      InkWell(onTap: () {
+                        Navigator.pushReplacement(context, MaterialPageRoute(builder: (context) {
+                          return Navigationnn();
+                        },));
+                      },
+                        child: Container(
+                          width: 259,
+                          height: 39,
+                          decoration: BoxDecoration(
+                              color: Color(0xff7A00E6),
+                              borderRadius: BorderRadius.circular(10)),
+                          child:  Center(
+                            child: Text(
+                              'Submit',
+                              style: GoogleFonts.poppins(
+                                  fontWeight: FontWeight.w700,
+                                  fontSize: 15,
+                                  color: Colors.white),
+                            ),
                           ),
                         ),
                       ),
@@ -175,12 +183,18 @@ class _OtpppState extends State<Otppp> {
                         fontSize: 12,
                         color: Colors.white),
                   ),
-                  Text(
-                    'Login',
-                    style: GoogleFonts.poppins(
-                        fontWeight: FontWeight.w700,
-                        fontSize: 12,
-                        color: Colors.white),
+                  InkWell(onTap: () {
+                    Navigator.pushReplacement(context, MaterialPageRoute(builder: (context) {
+                      return Loginnn();
+                    },));
+                  },
+                    child: Text(
+                      'Login',
+                      style: GoogleFonts.poppins(
+                          fontWeight: FontWeight.w700,
+                          fontSize: 12,
+                          color: Colors.white),
+                    ),
                   ),
                 ],
               ),

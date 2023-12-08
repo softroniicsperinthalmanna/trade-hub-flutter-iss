@@ -179,19 +179,23 @@ class _FaqqqqState extends State<Faqqqq> {
 
           Padding(
             padding: const EdgeInsets.only(left: 51,right: 51,top: 20),
-            child: Container(
-              width: 147,
-              height: 50,
-              decoration: BoxDecoration(
-                  color: Color(0xff7A00E6),
-                  borderRadius: BorderRadius.circular(36)),
-              child: Center(
-                child: Text(
-                  'Send Message',
-                  style: GoogleFonts.inter(
-                      fontWeight: FontWeight.w700,
-                      fontSize: 15,
-                      color: Color(0xffffffff)),
+            child: InkWell(onTap: () {
+              Navigator.pop(context);
+            },
+              child: Container(
+                width: 147,
+                height: 50,
+                decoration: BoxDecoration(
+                    color: Color(0xff7A00E6),
+                    borderRadius: BorderRadius.circular(36)),
+                child: Center(
+                  child: Text(
+                    'Send Message',
+                    style: GoogleFonts.inter(
+                        fontWeight: FontWeight.w700,
+                        fontSize: 15,
+                        color: Color(0xffffffff)),
+                  ),
                 ),
               ),
             ),

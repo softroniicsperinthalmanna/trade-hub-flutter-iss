@@ -1,6 +1,7 @@
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 import 'package:google_fonts/google_fonts.dart';
+import 'package:trade_hub/iphone%2034.dart';
 
 class Iphone3222 extends StatefulWidget {
   const Iphone3222({super.key});
@@ -16,28 +17,34 @@ class _Iphone3222State extends State<Iphone3222> {
       body: SafeArea(
         child: ListView(
           children: [
-            Row(
-              mainAxisAlignment: MainAxisAlignment.spaceEvenly,
-              children: [
-                Icon(Icons.arrow_back_ios_rounded),
-                Container(
-                  width: 340,
-                  height: 36,
-                  decoration: BoxDecoration(
-                      color: Colors.purple[50],
-                      borderRadius: BorderRadius.circular(6)),
-                  child: TextField(
-                    decoration: InputDecoration(
-                        border: InputBorder.none,
-                        hintText: 'Search here',
-                        prefixIcon: Icon(Icons.search),
-                        hintStyle: TextStyle(
-                            color: Color(0xff544C4C),
-                            fontWeight: FontWeight.w500,
-                            fontSize: 14)),
+            Padding(
+              padding: const EdgeInsets.only(top: 30),
+              child: Row(
+                mainAxisAlignment: MainAxisAlignment.spaceEvenly,
+                children: [
+                  InkWell(onTap: () {
+                    Navigator.pop(context);
+                  },
+                      child: Icon(Icons.arrow_back_ios_rounded)),
+                  Container(
+                    width: 340,
+                    height: 36,
+                    decoration: BoxDecoration(
+                        color:  Color(0x47B7A6FC),
+                        borderRadius: BorderRadius.circular(6)),
+                    child: TextField(
+                      decoration: InputDecoration(
+                          border: InputBorder.none,
+                          hintText: 'Search here',
+                          prefixIcon: Icon(Icons.search),
+                          hintStyle: TextStyle(
+                              color: Color(0xff544C4C),
+                              fontWeight: FontWeight.w500,
+                              fontSize: 14)),
+                    ),
                   ),
-                ),
-              ],
+                ],
+              ),
             ),
 
             //======================= search bar ============================================================================
@@ -133,7 +140,7 @@ class _Iphone3222State extends State<Iphone3222> {
             ),
             Container(
               height: 43,
-              color: Colors.purple[50],
+              color:  Color(0x33B7A6FC),
               child: Padding(
                 padding: const EdgeInsets.only(left: 15, right: 15),
                 child: Row(
@@ -217,7 +224,7 @@ class _Iphone3222State extends State<Iphone3222> {
 
             Container(
               height: 43,
-              color: Colors.purple[50],
+              color: Color(0x33B7A6FC),
               child: Padding(
                 padding: const EdgeInsets.only(left: 15, right: 15),
                 child: Row(
@@ -282,7 +289,7 @@ class _Iphone3222State extends State<Iphone3222> {
 
             Container(
               height: 44,
-              color: Colors.purple[50],
+              color:  Color(0x33B7A6FC),
               child: Padding(
                 padding: const EdgeInsets.only(left: 15, right: 15),
                 child: Row(
@@ -349,7 +356,7 @@ class _Iphone3222State extends State<Iphone3222> {
 
             Container(
               height: 44,
-              color: Colors.purple[50],
+              color:  Color(0x33B7A6FC),
               child: Padding(
                 padding: const EdgeInsets.only(left: 15, right: 15, top: 5),
                 child: Column(
@@ -515,7 +522,7 @@ class _Iphone3222State extends State<Iphone3222> {
             ),
             Container(
               height: 237,
-              color: Colors.purple[50],
+              color: Color(0x33B7A6FC),
               child: Column(
                 children: [
                   Padding(
@@ -695,7 +702,7 @@ class _Iphone3222State extends State<Iphone3222> {
 
             Container(
               height: 383,
-              color: Colors.purple[50],
+              color:  Color(0x33B7A6FC),
               child: Padding(
                 padding: const EdgeInsets.only(left: 0, right: 0),
                 child: Row(
@@ -898,11 +905,11 @@ class _Iphone3222State extends State<Iphone3222> {
             //==================  = ===================================================================================================================
 
             Padding(
-              padding: const EdgeInsets.only(left: 5, right: 5),
+              padding: const EdgeInsets.only(left: 15, right: 15),
               child: Container(
                 height: 305,
                 decoration: BoxDecoration(
-                    color: Colors.purple[50],
+                    color: Color(0x33B7A6FC),
                     borderRadius: BorderRadius.circular(10)),
                 child: Column(
                   mainAxisAlignment: MainAxisAlignment.spaceBetween,
@@ -911,7 +918,7 @@ class _Iphone3222State extends State<Iphone3222> {
                       width: double.infinity,
                       height: 62,
                       decoration: BoxDecoration(
-                          color: Colors.purple[100],
+                          color: Color(0x33B7A6FC),
                           borderRadius: BorderRadius.only(
                               topLeft: Radius.circular(10),
                               topRight: Radius.circular(10))),
@@ -1028,7 +1035,7 @@ class _Iphone3222State extends State<Iphone3222> {
                       width: double.infinity,
                       height: 62,
                       decoration: BoxDecoration(
-                          color: Colors.purple[100],
+                          color:  Color(0x33B7A6FC),
                           borderRadius: BorderRadius.only(
                               bottomRight: Radius.circular(10),
                               bottomLeft: Radius.circular(10))),
@@ -1074,7 +1081,7 @@ class _Iphone3222State extends State<Iphone3222> {
               child: Row(
                 children: [
                   Padding(
-                    padding: const EdgeInsets.only(left: 15,bottom: 30),
+                    padding: const EdgeInsets.only(left: 15, bottom: 30),
                     child: Column(
                       crossAxisAlignment: CrossAxisAlignment.start,
                       children: [
@@ -1118,7 +1125,7 @@ class _Iphone3222State extends State<Iphone3222> {
                   //-----------------------------------------------------------------------------------------------------------------------------------------
 
                   Padding(
-                    padding: const EdgeInsets.only(left: 15,bottom: 30),
+                    padding: const EdgeInsets.only(left: 15, bottom: 30),
                     child: Column(
                       crossAxisAlignment: CrossAxisAlignment.start,
                       children: [
@@ -1165,7 +1172,7 @@ class _Iphone3222State extends State<Iphone3222> {
                   //-----------------------------------------------------------------------------------------------------------------------------------------
 
                   Padding(
-                    padding: const EdgeInsets.only(left: 15,bottom: 30),
+                    padding: const EdgeInsets.only(left: 15, bottom: 30),
                     child: Column(
                       crossAxisAlignment: CrossAxisAlignment.start,
                       children: [
@@ -1222,14 +1229,15 @@ class _Iphone3222State extends State<Iphone3222> {
       builder: (context) {
         return Container(
           width: double.infinity,
-          height: 300,
+          height: 400,
           decoration: BoxDecoration(
               color: Colors.white,
               borderRadius: BorderRadius.only(
                   topRight: Radius.circular(20), topLeft: Radius.circular(20))),
           child: Padding(
-            padding: const EdgeInsets.only(top: 20,left: 0,right: 0),
-            child: Column(mainAxisAlignment: MainAxisAlignment.center,
+            padding: const EdgeInsets.only(top: 20, left: 0, right: 0),
+            child: Column(
+              mainAxisAlignment: MainAxisAlignment.center,
               children: [
                 Text('Select Storage',
                     style: GoogleFonts.lexendDeca(
@@ -1239,7 +1247,8 @@ class _Iphone3222State extends State<Iphone3222> {
                     )),
                 Padding(
                   padding: const EdgeInsets.only(top: 30),
-                  child: Row(mainAxisAlignment: MainAxisAlignment.center,
+                  child: Row(
+                    mainAxisAlignment: MainAxisAlignment.center,
                     children: [
                       Icon(Icons.circle_outlined),
                       Text('        128 GB',
@@ -1255,9 +1264,10 @@ class _Iphone3222State extends State<Iphone3222> {
                 //--------------------------------------------------------------------------------------
                 Padding(
                   padding: const EdgeInsets.only(top: 20),
-                  child: Row(mainAxisAlignment: MainAxisAlignment.center,
+                  child: Row(
+                    mainAxisAlignment: MainAxisAlignment.center,
                     children: [
-                      Icon(Icons.circle,color: Colors.purple),
+                      Icon(Icons.circle, color: Colors.purple),
                       Text('        256 GB',
                           style: GoogleFonts.lexendDeca(
                             fontWeight: FontWeight.w500,
@@ -1272,7 +1282,8 @@ class _Iphone3222State extends State<Iphone3222> {
 
                 Padding(
                   padding: const EdgeInsets.only(top: 20),
-                  child: Row(mainAxisAlignment: MainAxisAlignment.center,
+                  child: Row(
+                    mainAxisAlignment: MainAxisAlignment.center,
                     children: [
                       Icon(Icons.circle_outlined),
                       Text('        512 GB',
@@ -1288,8 +1299,9 @@ class _Iphone3222State extends State<Iphone3222> {
                 //--------------------------------------------------------------------------------------
 
                 Padding(
-                  padding: const EdgeInsets.only(top: 20),
-                  child: Row(mainAxisAlignment: MainAxisAlignment.center,
+                  padding: const EdgeInsets.only(top: 20, bottom: 0),
+                  child: Row(
+                    mainAxisAlignment: MainAxisAlignment.center,
                     children: [
                       Icon(Icons.circle_outlined),
                       Text('        1 TB    ',
@@ -1304,7 +1316,30 @@ class _Iphone3222State extends State<Iphone3222> {
 
                 //--------------------------------------------------------------------------------------
 
-
+                Padding(
+                  padding: const EdgeInsets.only(left: 40,right: 40,top: 30,bottom: 30),
+                  child: InkWell(onTap: () {
+                    Navigator.pushReplacement(context, MaterialPageRoute(builder: (context) {
+                      return Iphone3444();
+                    },));
+                  },
+                    child: Container(
+                      width: double.infinity,
+                      height: 45,
+                      decoration: BoxDecoration(
+                          color: Color(0xffB7A6FC),
+                          borderRadius: BorderRadius.circular(10)),
+                      child:  Center(
+                        child: Text('Continue',
+                            style: GoogleFonts.lexendDeca(
+                              fontWeight: FontWeight.w700,
+                              fontSize: 23,
+                              color: Colors.white,
+                            )),
+                      ),
+                    ),
+                  ),
+                )
               ],
             ),
           ),

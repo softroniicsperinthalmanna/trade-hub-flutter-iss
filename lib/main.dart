@@ -20,6 +20,7 @@ import 'package:trade_hub/iphone%2032.dart';
 import 'package:trade_hub/iphone%2034.dart';
 import 'package:trade_hub/ipone%2039.dart';
 import 'package:trade_hub/log%20in.dart';
+import 'package:trade_hub/moment%20profile.dart';
 import 'package:trade_hub/moments.dart';
 import 'package:trade_hub/otp.dart';
 import 'package:trade_hub/passwordmanager.dart';
@@ -29,6 +30,7 @@ import 'package:trade_hub/settings.dart';
 import 'package:trade_hub/shop%20sign%20in.dart';
 import 'package:trade_hub/shoping%20page.dart';
 import 'package:trade_hub/sign%20in.dart';
+import 'package:trade_hub/splash%20screen.dart';
 import 'package:trade_hub/welcome.dart';
 
 import 'navigation bar.dart';
@@ -64,7 +66,7 @@ class MyApp extends StatelessWidget {
         colorScheme: ColorScheme.fromSeed(seedColor: Colors.deepPurple),
         useMaterial3: true,
       ),
-      home: Chatpageee()
+      home: Loginnn()
     );
   }
 }

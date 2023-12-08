@@ -15,17 +15,20 @@ class _EditprofileeeState extends State<Editprofileee> {
       body: SafeArea(
           child: ListView(
         children: [
-          Row(
-            mainAxisAlignment: MainAxisAlignment.center,
-            children: [
-              Text(
-                'Edit Profile',
-                style: GoogleFonts.lexendDeca(
-                    fontWeight: FontWeight.w400,
-                    fontSize: 27,
-                    color: Color(0xffB7A6FC)),
-              ),
-            ],
+          Padding(
+            padding: const EdgeInsets.only(top: 20),
+            child: Row(
+              mainAxisAlignment: MainAxisAlignment.center,
+              children: [
+                Text(
+                  'Edit Profile',
+                  style: GoogleFonts.lexendDeca(
+                      fontWeight: FontWeight.w400,
+                      fontSize: 27,
+                      color: Color(0xffB7A6FC)),
+                ),
+              ],
+            ),
           ),
           Padding(
             padding: const EdgeInsets.only(top: 30),
@@ -241,19 +244,23 @@ class _EditprofileeeState extends State<Editprofileee> {
             children: [
               Padding(
                 padding: const EdgeInsets.all(20.0),
-                child: Container(
-                  width: 147,
-                  height: 50,
-                  decoration: BoxDecoration(
-                      color: Color(0xff7A00E6),
-                      borderRadius: BorderRadius.circular(36)),
-                  child: Center(
-                    child: Text(
-                      'Save Changes',
-                      style: GoogleFonts.inter(
-                          fontWeight: FontWeight.w700,
-                          fontSize: 15,
-                          color: Color(0xffffffff)),
+                child: InkWell(onTap: () {
+                  Navigator.pop(context);
+                },
+                  child: Container(
+                    width: 147,
+                    height: 50,
+                    decoration: BoxDecoration(
+                        color: Color(0xff7A00E6),
+                        borderRadius: BorderRadius.circular(36)),
+                    child: Center(
+                      child: Text(
+                        'Save Changes',
+                        style: GoogleFonts.inter(
+                            fontWeight: FontWeight.w700,
+                            fontSize: 15,
+                            color: Color(0xffffffff)),
+                      ),
                     ),
                   ),
                 ),

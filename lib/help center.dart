@@ -16,39 +16,48 @@ class _HelpcenterrrState extends State<Helpcenterrr> {
     return DefaultTabController(
         length: 2,
         child: Scaffold(
+          appBar: AppBar(
+            automaticallyImplyLeading: false,
+            surfaceTintColor: Colors.white,
+            foregroundColor: null,
+            shadowColor: null,
+            title: Row(
+              mainAxisAlignment: MainAxisAlignment.spaceBetween,
+              children: [
+                InkWell(onTap: () {
+                  Navigator.pop(context);
+                },
+
+                  child: Container(
+                    width: 40,
+                    height: 40,
+                    decoration: BoxDecoration(
+                        borderRadius: BorderRadius.circular(90),
+                        border: Border.all(color: Colors.black)),
+                    child: Icon(
+                      Icons.arrow_back,
+                      size: 30,
+                    ),
+                  ),
+                ),
+                Text(
+                  'Settings',
+                  style: GoogleFonts.lexendDeca(
+                      fontWeight: FontWeight.w400,
+                      fontSize: 27,
+                      color: Color(0xffB7A6FC)),
+                ),
+                SizedBox(
+                  width: 40,
+                  height: 40,
+                ),
+              ],
+            ),
+          ),
+
           body: SafeArea(
               child: Column(
             children: [
-              Padding(
-                padding: const EdgeInsets.only(left: 20,right: 20),
-                child: Row(
-                  mainAxisAlignment: MainAxisAlignment.spaceBetween,
-                  children: [
-                    Container(
-                      width: 40,
-                      height: 40,
-                      decoration: BoxDecoration(
-                          borderRadius: BorderRadius.circular(90),
-                          border: Border.all(color: Colors.black)),
-                      child: Icon(Icons.arrow_back),
-                    ),
-                    Text(
-                      'Help Center',
-                      style: GoogleFonts.lexendDeca(
-                          fontWeight: FontWeight.w400,
-                          fontSize: 23,
-                          color: Color(0xffB7A6FC)),
-                    ),
-                    Container(
-                      width: 40,
-                      height: 40,
-                      decoration: BoxDecoration(
-                          borderRadius: BorderRadius.circular(90),
-                          border: Border.all(color: Colors.white)),
-                    )
-                  ],
-                ),
-              ),
 
               //=========================================== tabbar ==========================================================
 

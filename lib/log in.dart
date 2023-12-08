@@ -1,5 +1,8 @@
 import 'package:flutter/material.dart';
 import 'package:google_fonts/google_fonts.dart';
+import 'package:trade_hub/navigation%20bar.dart';
+import 'package:trade_hub/otp.dart';
+import 'package:trade_hub/sign%20in.dart';
 
 class Loginnn extends StatefulWidget {
   const Loginnn({super.key});
@@ -56,12 +59,12 @@ class _LoginnnState extends State<Loginnn> {
                         height: 51,
                         decoration: BoxDecoration(
                           borderRadius: BorderRadius.circular(23),
-                          color:Colors.white.withOpacity(0.5),
+                          color: Color(0xCEFFD465),
                         ),
                         child: TextField(
                           decoration: InputDecoration(
                               border: InputBorder.none,
-                              hintText: '      password',
+                              hintText: '      enter your email',
                               hintStyle: TextStyle(
                                   color: Color(0xff544C4C),
                                   fontWeight: FontWeight.w500,
@@ -81,7 +84,7 @@ class _LoginnnState extends State<Loginnn> {
                         height: 51,
                         decoration: BoxDecoration(
                           borderRadius: BorderRadius.circular(23),
-                          color: Colors.white.withOpacity(0.5),
+                          color: Color(0xCEFFD465),
                         ),
                         child: TextField(
                           decoration: InputDecoration(
@@ -97,34 +100,46 @@ class _LoginnnState extends State<Loginnn> {
 
                     //--------------------------------------------------------------------------------------------------------------
 
-                    Container(
-                      width: 96,
-                      height: 39,
-                      decoration: BoxDecoration(
-                          borderRadius: BorderRadius.circular(10),
-                          color: Colors.yellow,
-                          border: Border.all(
-                            color: Colors.orangeAccent,
-                            width: 3,
-                          )),
-                      child: Center(
-                        child: Text('Log in',
+                    InkWell(onTap: () {
+                      Navigator.pushReplacement(context, MaterialPageRoute(builder: (context) {
+                        return Otppp();
+                      },));
+                    },
+                      child: Container(
+                        width: 96,
+                        height: 39,
+                        decoration: BoxDecoration(
+                            borderRadius: BorderRadius.circular(10),
+                            color: Colors.yellow,
+                            border: Border.all(
+                              color: Colors.orangeAccent,
+                              width: 3,
+                            )),
+                        child: Center(
+                          child: Text('Log in',
+                              style: GoogleFonts.judson(
+                                fontWeight: FontWeight.w400,
+                                fontSize: 18,
+                                color: Colors.white,
+                              )),
+                        ),
+                      ),
+                    ),
+
+                    Padding(
+                      padding: const EdgeInsets.only(top: 20),
+                      child: InkWell(onTap: () {
+                        Navigator.push(context, MaterialPageRoute(builder: (context) {
+                          return Signinnn();
+                        },));
+                      },
+                        child: Text('or sign up using',
                             style: GoogleFonts.judson(
                               fontWeight: FontWeight.w400,
                               fontSize: 18,
                               color: Colors.white,
                             )),
                       ),
-                    ),
-
-                    Padding(
-                      padding: const EdgeInsets.only(top: 20),
-                      child: Text('or sign up using',
-                          style: GoogleFonts.judson(
-                            fontWeight: FontWeight.w400,
-                            fontSize: 18,
-                            color: Colors.white,
-                          )),
                     ),
 
                     Padding(

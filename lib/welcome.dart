@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:google_fonts/google_fonts.dart';
+import 'package:trade_hub/log%20in.dart';
 
 class Welcomeee extends StatefulWidget {
   const Welcomeee({super.key});
@@ -103,19 +104,25 @@ class _WelcomeeeState extends State<Welcomeee> {
                   child: Row(
                     mainAxisAlignment: MainAxisAlignment.spaceBetween,
                     children: [
-                      Container(
-                        width: 113,
-                        height: 50,
-                        decoration: BoxDecoration(
-                            borderRadius: BorderRadius.circular(10),
-                            color: Color(0xff060330)),
-                        child: Center(
-                          child: Text(
-                            'Log in',
-                            style: GoogleFonts.inter(
-                                fontWeight: FontWeight.w400,
-                                fontSize: 19,
-                                color: Colors.white),
+                      InkWell(onTap: () {
+                        Navigator.pushReplacement(context, MaterialPageRoute(builder: (context) {
+                          return Loginnn();
+                        },));
+                      },
+                        child: Container(
+                          width: 113,
+                          height: 50,
+                          decoration: BoxDecoration(
+                              borderRadius: BorderRadius.circular(10),
+                              color: Color(0xff060330)),
+                          child: Center(
+                            child: Text(
+                              'Log in',
+                              style: GoogleFonts.inter(
+                                  fontWeight: FontWeight.w400,
+                                  fontSize: 19,
+                                  color: Colors.white),
+                            ),
                           ),
                         ),
                       ),

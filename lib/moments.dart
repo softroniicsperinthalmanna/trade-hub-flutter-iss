@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:google_fonts/google_fonts.dart';
+import 'package:trade_hub/moment%20profile.dart';
 
 class Momentsss extends StatefulWidget {
   const Momentsss({super.key});
@@ -29,32 +30,38 @@ class _MomentsssState extends State<Momentsss> {
 
           Padding(
             padding: const EdgeInsets.only(left: 20, top: 20),
-            child: Row(
-              children: [
-                Image.asset('assets/Ellipse 12.png'),
-                Padding(
-                  padding: const EdgeInsets.only(left: 15),
-                  child: Column(
-                    crossAxisAlignment: CrossAxisAlignment.start,
-                    children: [
-                      Text(
-                        'rahul',
-                        style: GoogleFonts.inter(
-                            fontWeight: FontWeight.w400,
-                            fontSize: 18,
-                            color: Colors.black),
-                      ),
-                      Text(
-                        'karnadaka',
-                        style: GoogleFonts.inter(
-                            fontWeight: FontWeight.w400,
-                            fontSize: 10,
-                            color: Colors.black),
-                      ),
-                    ],
-                  ),
-                )
-              ],
+            child: InkWell(onTap:() {
+              Navigator.push(context, MaterialPageRoute(builder: (context) {
+                return Momentsppp();
+              },));
+            },
+              child: Row(
+                children: [
+                  Image.asset('assets/Ellipse 12.png'),
+                  Padding(
+                    padding: const EdgeInsets.only(left: 15),
+                    child: Column(
+                      crossAxisAlignment: CrossAxisAlignment.start,
+                      children: [
+                        Text(
+                          'rahul',
+                          style: GoogleFonts.inter(
+                              fontWeight: FontWeight.w400,
+                              fontSize: 18,
+                              color: Colors.black),
+                        ),
+                        Text(
+                          'karnadaka',
+                          style: GoogleFonts.inter(
+                              fontWeight: FontWeight.w400,
+                              fontSize: 10,
+                              color: Colors.black),
+                        ),
+                      ],
+                    ),
+                  )
+                ],
+              ),
             ),
           ),
 
@@ -220,7 +227,7 @@ class _MomentsssState extends State<Momentsss> {
           //=============================================================================================================
 
           Padding(
-            padding: const EdgeInsets.only(left: 20,top: 10),
+            padding: const EdgeInsets.only(left: 20,top: 10,bottom: 100),
             child: Column(crossAxisAlignment: CrossAxisAlignment.start,
               children: [
                 Row(

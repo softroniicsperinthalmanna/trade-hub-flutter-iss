@@ -22,7 +22,7 @@ class _MyorderrrState extends State<Myorderrr> {
                 child: Column(
               children: [
                 Padding(
-                  padding: const EdgeInsets.only(left: 30, right: 30),
+                  padding: const EdgeInsets.only(left: 30, right: 30,top: 30),
                   child: Row(
                     mainAxisAlignment: MainAxisAlignment.spaceBetween,
                     children: [

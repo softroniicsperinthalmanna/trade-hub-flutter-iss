@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:google_fonts/google_fonts.dart';
+import 'package:trade_hub/chat%20page.dart';
 
 class Chattt extends StatefulWidget {
   const Chattt({super.key});
@@ -85,37 +86,43 @@ class _ChatttState extends State<Chattt> {
           ),
 
           //===================================================================================================================
-          Container(
-            width: 72,
-            color: Color(0xffF5F5F5),
-            child: Padding(
-              padding: const EdgeInsets.only(left: 20, top: 10, bottom: 10),
-              child: Row(
-                children: [
-                  Image.asset('assets/Avatar (1).png'),
-                  Padding(
-                    padding: const EdgeInsets.only(left: 15),
-                    child: Column(
-                      crossAxisAlignment: CrossAxisAlignment.start,
-                      children: [
-                        Text(
-                          'David Moore',
-                          style: GoogleFonts.inter(
-                              fontWeight: FontWeight.w600,
-                              fontSize: 16,
-                              color: Colors.black),
-                        ),
-                        Text(
-                          'Of course, what can i help you with??',
-                          style: GoogleFonts.inter(
-                              fontWeight: FontWeight.w400,
-                              fontSize: 14,
-                              color: Color(0xff707991)),
-                        ),
-                      ],
-                    ),
-                  )
-                ],
+          InkWell(onTap: () {
+            Navigator.push(context, MaterialPageRoute(builder: (context) {
+              return Chatpageee();
+            },));
+          },
+            child: Container(
+              width: 72,
+              color: Color(0xffF5F5F5),
+              child: Padding(
+                padding: const EdgeInsets.only(left: 20, top: 10, bottom: 10),
+                child: Row(
+                  children: [
+                    Image.asset('assets/Avatar (1).png'),
+                    Padding(
+                      padding: const EdgeInsets.only(left: 15),
+                      child: Column(
+                        crossAxisAlignment: CrossAxisAlignment.start,
+                        children: [
+                          Text(
+                            'David Moore',
+                            style: GoogleFonts.inter(
+                                fontWeight: FontWeight.w600,
+                                fontSize: 16,
+                                color: Colors.black),
+                          ),
+                          Text(
+                            'Of course, what can i help you with??',
+                            style: GoogleFonts.inter(
+                                fontWeight: FontWeight.w400,
+                                fontSize: 14,
+                                color: Color(0xff707991)),
+                          ),
+                        ],
+                      ),
+                    )
+                  ],
+                ),
               ),
             ),
           ),
@@ -368,36 +375,39 @@ class _ChatttState extends State<Chattt> {
           ),
 //===================================================================================================================
 
-          ListTile(
-            leading: Image.asset('assets/Avatar.png'),
-            title: Text(
-              'Greg James',
-              style: GoogleFonts.inter(
-                  fontWeight: FontWeight.w600,
-                  fontSize: 16,
-                  color: Colors.black),
-            ),
-            subtitle: Text(
-              'I got a job at SpaceX 🎉 🚀  ',
-              style: GoogleFonts.inter(
-                  fontWeight: FontWeight.w400,
-                  fontSize: 14,
-                  color: Color(0xff707991)),
-            ),
-            trailing: Column(
-              children: [
-                Text(
-                  '18:02',
-                  style: GoogleFonts.inter(
-                      fontWeight: FontWeight.w400,
-                      fontSize: 12,
-                      color: Color(0xff707991)),
-                ),
-                Padding(
-                    padding: const EdgeInsets.only(top: 6),
-                    child: SizedBox(width: 10,height: 10,)
-                )
-              ],
+          Padding(
+            padding: const EdgeInsets.only(bottom: 90),
+            child: ListTile(
+              leading: Image.asset('assets/Avatar.png'),
+              title: Text(
+                'Greg James',
+                style: GoogleFonts.inter(
+                    fontWeight: FontWeight.w600,
+                    fontSize: 16,
+                    color: Colors.black),
+              ),
+              subtitle: Text(
+                'I got a job at SpaceX 🎉 🚀  ',
+                style: GoogleFonts.inter(
+                    fontWeight: FontWeight.w400,
+                    fontSize: 14,
+                    color: Color(0xff707991)),
+              ),
+              trailing: Column(
+                children: [
+                  Text(
+                    '18:02',
+                    style: GoogleFonts.inter(
+                        fontWeight: FontWeight.w400,
+                        fontSize: 12,
+                        color: Color(0xff707991)),
+                  ),
+                  Padding(
+                      padding: const EdgeInsets.only(top: 6),
+                      child: SizedBox(width: 10,height: 10,)
+                  )
+                ],
+              ),
             ),
           ),
 

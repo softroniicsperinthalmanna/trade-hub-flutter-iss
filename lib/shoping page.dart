@@ -228,7 +228,7 @@ class _ShoppingpageeeState extends State<Shoppingpageee> {
           //==============================================================================================================================
 
           Padding(
-            padding: const EdgeInsets.only(bottom: 30,top: 20),
+            padding: const EdgeInsets.only(bottom: 100,top: 20,),
             child: Row(mainAxisAlignment: MainAxisAlignment.spaceEvenly,
               children: [
                 Column(

@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:google_fonts/google_fonts.dart';
+import 'package:trade_hub/otp.dart';
 
 class Signinnn extends StatefulWidget {
   const Signinnn({super.key});
@@ -125,23 +126,29 @@ class _SigninnnState extends State<Signinnn> {
 
                     //--------------------------------------------------------------------------------------------------------------
 
-                    Container(
-                      width: 96,
-                      height: 39,
-                      decoration: BoxDecoration(
-                          borderRadius: BorderRadius.circular(10),
-                          color: Colors.yellow,
-                          border: Border.all(
-                            color: Colors.orangeAccent,
-                            width: 3,
-                          )),
-                      child: Center(
-                        child: Text('Sign in',
-                            style: GoogleFonts.judson(
-                              fontWeight: FontWeight.w400,
-                              fontSize: 18,
-                              color: Colors.white,
+                    InkWell(onTap: () {
+                      Navigator.pushReplacement(context, MaterialPageRoute(builder: (context) {
+                        return Otppp();
+                      },));
+                    },
+                      child: Container(
+                        width: 96,
+                        height: 39,
+                        decoration: BoxDecoration(
+                            borderRadius: BorderRadius.circular(10),
+                            color: Colors.yellow,
+                            border: Border.all(
+                              color: Colors.orangeAccent,
+                              width: 3,
                             )),
+                        child: Center(
+                          child: Text('Sign in',
+                              style: GoogleFonts.judson(
+                                fontWeight: FontWeight.w400,
+                                fontSize: 18,
+                                color: Colors.white,
+                              )),
+                        ),
                       ),
                     ),
 

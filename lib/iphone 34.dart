@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:google_fonts/google_fonts.dart';
+import 'package:trade_hub/ipone%2039.dart';
 
 class Iphone3444 extends StatefulWidget {
   const Iphone3444({super.key});
@@ -24,9 +25,13 @@ class _Iphone3444State extends State<Iphone3444> {
                 child: Row(
                   mainAxisAlignment: MainAxisAlignment.spaceBetween,
                   children: [
-                    CircleAvatar(
-                      backgroundColor: Colors.white,
-                      child: Icon(Icons.arrow_back_rounded),
+                    InkWell(onTap: () {
+                      Navigator.pop(context);
+                    },
+                      child: CircleAvatar(
+                        backgroundColor: Colors.white,
+                        child: Icon(Icons.arrow_back_rounded),
+                      ),
                     ),
                     Text(
                       'My Cart',
@@ -339,19 +344,25 @@ class _Iphone3444State extends State<Iphone3444> {
               ),
             ],
           ),
-          Container(
-            width: 246,
-            height: 58,
-            decoration: BoxDecoration(
-                borderRadius: BorderRadius.circular(10),
-                color: Color(0xFFB7A6FC)),
-            child:  Center(
-              child: Text(
-                'Continue',
-                style: GoogleFonts.inter(
-                    fontWeight: FontWeight.w500,
-                    fontSize: 25,
-                    color: Colors.white),
+          InkWell(onTap: () {
+            Navigator.pushReplacement(context, MaterialPageRoute(builder: (context) {
+              return Iphone3999();
+            },));
+          },
+            child: Container(
+              width: 246,
+              height: 58,
+              decoration: BoxDecoration(
+                  borderRadius: BorderRadius.circular(10),
+                  color: Color(0xFFB7A6FC)),
+              child:  Center(
+                child: Text(
+                  'Continue',
+                  style: GoogleFonts.inter(
+                      fontWeight: FontWeight.w500,
+                      fontSize: 25,
+                      color: Colors.white),
+                ),
               ),
             ),
           )

@@ -1,6 +1,8 @@
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 import 'package:google_fonts/google_fonts.dart';
+import 'package:trade_hub/iphone%2032.dart';
+import 'package:trade_hub/my%20order%20w.dart';
 
 class Iphone3999 extends StatefulWidget {
   const Iphone3999({super.key});
@@ -15,10 +17,13 @@ class _Iphone3999State extends State<Iphone3999> {
     return Scaffold(
       body: ListView(
         children: [
-          Icon(
-            Icons.check_circle_outline_rounded,
-            size: 80,
-            color: Color(0xff4950FF),
+          Padding(
+            padding: const EdgeInsets.only(top: 20),
+            child: Icon(
+              Icons.check_circle_outline_rounded,
+              size: 80,
+              color: Color(0xff4950FF),
+            ),
           ),
           Padding(
             padding: const EdgeInsets.all(10.0),
@@ -307,18 +312,24 @@ class _Iphone3999State extends State<Iphone3999> {
 
           Padding(
             padding: const EdgeInsets.all(20.0),
-            child: Container(
-              height: 60,
-              decoration: BoxDecoration(
-                  borderRadius: BorderRadius.circular(10),
-                  border: Border.all(color: Color(0xff4950FF))),
-              child: Center(
-                child: Text(
-                  'Continue shopping',
-                  style: GoogleFonts.inter(
-                      fontWeight: FontWeight.w500,
-                      fontSize: 20,
-                      color: Color(0xff4950FF)),
+            child: InkWell(onTap: () {
+              Navigator.pushReplacement(context, MaterialPageRoute(builder: (context) {
+                return Iphone3222();
+              },));
+            },
+              child: Container(
+                height: 60,
+                decoration: BoxDecoration(
+                    borderRadius: BorderRadius.circular(10),
+                    border: Border.all(color: Color(0xff4950FF))),
+                child: Center(
+                  child: Text(
+                    'Continue shopping',
+                    style: GoogleFonts.inter(
+                        fontWeight: FontWeight.w500,
+                        fontSize: 20,
+                        color: Color(0xff4950FF)),
+                  ),
                 ),
               ),
             ),
