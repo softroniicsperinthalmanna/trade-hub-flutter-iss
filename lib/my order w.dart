@@ -46,7 +46,7 @@ return DefaultTabController(
                             style: GoogleFonts.lexendDeca(
                                 fontWeight: FontWeight.w400,
                                 fontSize: 23,
-                                color: Colors.black),
+                                color:Color(0xffB7A6FC)),
                           ),
                          SizedBox(width: 40,height: 40,)
                         ],
@@ -87,8 +87,8 @@ return DefaultTabController(
                             ),
                           ),
                         ],
-                        labelColor: Colors.white,
-                        unselectedLabelColor: Color(0xff000000),
+                        labelColor: Color(0xff7A00E6),
+                        unselectedLabelColor: Color(0xff707991),
                         indicatorSize: TabBarIndicatorSize.tab,
                       ),
                     ),

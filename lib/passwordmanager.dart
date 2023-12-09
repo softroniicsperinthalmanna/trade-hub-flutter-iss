@@ -9,6 +9,9 @@ class Passwordmanagerrr extends StatefulWidget {
 }
 
 class _PasswordmanagerrrState extends State<Passwordmanagerrr> {
+
+  bool passToggle = true;
+
   @override
   Widget build(BuildContext context) {
     return Scaffold(
@@ -82,15 +85,27 @@ class _PasswordmanagerrrState extends State<Passwordmanagerrr> {
               decoration: BoxDecoration(
                   border: Border.all(color: Color(0xff544C4C99)),
                   borderRadius: BorderRadius.circular(6)),
-              child: TextField(
-                decoration: InputDecoration(
-                    border: InputBorder.none,
-                    hintText: '      ***************',
-                    suffixIcon: ImageIcon(AssetImage('assets/View_hide.png')),
-                    hintStyle: TextStyle(
-                        color: Color(0xff544C4C),
-                        fontWeight: FontWeight.w500,
-                        fontSize: 14)),
+              child: Padding(
+                padding: const EdgeInsets.only(left: 20),
+                child: TextFormField(
+                  obscureText: passToggle,
+                  decoration: InputDecoration(
+                      border: InputBorder.none,
+                      suffix: InkWell(
+                        onTap: () {
+                          setState(() {
+                            passToggle = !passToggle;
+                          });
+                        },
+                        child: Padding(
+                          padding: const EdgeInsets.only(right: 20),
+                          child: Icon(passToggle
+                              ? Icons.visibility
+                              : Icons.visibility_off),
+                        ),
+                      )),
+
+                ),
               ),
             ),
           ),
@@ -142,15 +157,27 @@ class _PasswordmanagerrrState extends State<Passwordmanagerrr> {
               decoration: BoxDecoration(
                   border: Border.all(color: Color(0xff544C4C99)),
                   borderRadius: BorderRadius.circular(6)),
-              child: TextField(
-                decoration: InputDecoration(
-                    border: InputBorder.none,
-                    hintText: '      ***************',
-                    suffixIcon: ImageIcon(AssetImage('assets/View_hide.png')),
-                    hintStyle: TextStyle(
-                        color: Color(0xff544C4C),
-                        fontWeight: FontWeight.w500,
-                        fontSize: 14)),
+              child: Padding(
+                padding: const EdgeInsets.only(left: 20),
+                child: TextFormField(
+                  obscureText: passToggle,
+                  decoration: InputDecoration(
+                      border: InputBorder.none,
+                      suffix: InkWell(
+                        onTap: () {
+                          setState(() {
+                            passToggle = !passToggle;
+                          });
+                        },
+                        child: Padding(
+                          padding: const EdgeInsets.only(right: 20),
+                          child: Icon(passToggle
+                              ? Icons.visibility
+                              : Icons.visibility_off),
+                        ),
+                      )),
+
+                ),
               ),
             ),
           ),
@@ -183,15 +210,27 @@ class _PasswordmanagerrrState extends State<Passwordmanagerrr> {
               decoration: BoxDecoration(
                   border: Border.all(color: Color(0xff544C4C99)),
                   borderRadius: BorderRadius.circular(6)),
-              child: TextField(
-                decoration: InputDecoration(
-                    border: InputBorder.none,
-                    hintText: '      ***************',
-                    suffixIcon: ImageIcon(AssetImage('assets/View_hide.png')),
-                    hintStyle: TextStyle(
-                        color: Color(0xff544C4C),
-                        fontWeight: FontWeight.w500,
-                        fontSize: 14)),
+              child: Padding(
+                padding: const EdgeInsets.only(left: 20),
+                child: TextFormField(
+                  obscureText: passToggle,
+                  decoration: InputDecoration(
+                      border: InputBorder.none,
+                      suffix: InkWell(
+                        onTap: () {
+                          setState(() {
+                            passToggle = !passToggle;
+                          });
+                        },
+                        child: Padding(
+                          padding: const EdgeInsets.only(right: 20),
+                          child: Icon(passToggle
+                              ? Icons.visibility
+                              : Icons.visibility_off),
+                        ),
+                      )),
+
+                ),
               ),
             ),
           ),

@@ -37,7 +37,7 @@ class _InvitefriendsssState extends State<Invitefriendsss> {
               ),
             ),
             Text(
-              'Settings',
+              'Invite Friends',
               style: GoogleFonts.lexendDeca(
                   fontWeight: FontWeight.w400,
                   fontSize: 27,

@@ -60,7 +60,7 @@ class _LoginnnState extends State<Loginnn> {
 
                       Padding(
                         padding: const EdgeInsets.only(
-                            left: 50, right: 50, top: 10, bottom: 30),
+                            left: 50, right: 50, top: 10, bottom: 10),
                         child: Container(
                           width: double.infinity,
                           height: 51,
@@ -68,26 +68,29 @@ class _LoginnnState extends State<Loginnn> {
                             borderRadius: BorderRadius.circular(23),
                             color: Color(0xCEFFD465),
                           ),
-                          child: TextFormField(
-                            controller: emailController,
-                            decoration: InputDecoration(
-                                border: InputBorder.none,
-                                hintText: '      enter your email',
-                                hintStyle: TextStyle(
-                                    color: Color(0xff544C4C),
-                                    fontWeight: FontWeight.w500,
-                                    fontSize: 14)),
-                            validator: (value) {
-                              bool emailvalid = RegExp(
-                                      r"^[a-zA-Z0-9.a-zA-Z0-9.!#$%&'*+-/=?^_`{|}~]+@[a-zA-Z0-9]+\.[a-zA-Z]+")
-                                  .hasMatch(value!);
+                          child: Padding(
+                            padding: const EdgeInsets.only(left: 20),
+                            child: TextFormField(
+                              controller: emailController,
+                              decoration: InputDecoration(
+                                  border: InputBorder.none,
+                                  hintText: '      enter your email',
+                                  hintStyle: TextStyle(
+                                      color: Color(0xff544C4C),
+                                      fontWeight: FontWeight.w500,
+                                      fontSize: 14)),
+                              validator: (value) {
+                                bool emailvalid = RegExp(
+                                        r"^[a-zA-Z0-9.a-zA-Z0-9.!#$%&'*+-/=?^_`{|}~]+@[a-zA-Z0-9]+\.[a-zA-Z]+")
+                                    .hasMatch(value!);
 
-                              if (value!.isEmpty) {
-                                return "Enter Email";
-                              } else if (!emailvalid) {
-                                return "Enter Valied Email";
-                              }
-                            },
+                                if (value!.isEmpty) {
+                                  return "Enter Email";
+                                } else if (!emailvalid) {
+                                  return "Enter Valied Email";
+                                }
+                              },
+                            ),
                           ),
                         ),
                       ),
@@ -104,37 +107,39 @@ class _LoginnnState extends State<Loginnn> {
                             borderRadius: BorderRadius.circular(23),
                             color: Color(0xCEFFD465),
                           ),
-                          child: TextFormField(
-                            controller: passController,
-                            obscureText: passToggle,
-                            decoration: InputDecoration(
-                                border: InputBorder.none,
-                                hintText: '      password',
-                                hintStyle: TextStyle(
-                                    color: Color(0xff544C4C),
-                                    fontWeight: FontWeight.w500,
-                                    fontSize: 14),
-                                // suffixIcon: Icon(Icons.lock),
-                                suffix: InkWell(
-                                  onTap: () {
-                                    setState(() {
-                                      passToggle = !passToggle;
-                                    });
-                                  },
-                                  child: Padding(
-                                    padding: const EdgeInsets.only(right: 20),
-                                    child: Icon(passToggle
-                                        ? Icons.visibility
-                                        : Icons.visibility_off),
-                                  ),
-                                )),
-                            validator: (value) {
-                              if (value!.isEmpty) {
-                                return "Entee Password";
-                              } else if (passController.text.length < 6) {
-                                return "Password Length Should not be more than 6 characters";
-                              }
-                            },
+                          child: Padding(
+                            padding: const EdgeInsets.only(left: 20),
+                            child: TextFormField(
+                              controller: passController,
+                              obscureText: passToggle,
+                              decoration: InputDecoration(
+                                  border: InputBorder.none,
+                                  hintText: ' password',
+                                  hintStyle: TextStyle(
+                                      color: Color(0xff544C4C),
+                                      fontWeight: FontWeight.w500,
+                                      fontSize: 14),
+                                  suffix: InkWell(
+                                    onTap: () {
+                                      setState(() {
+                                        passToggle = !passToggle;
+                                      });
+                                    },
+                                    child: Padding(
+                                      padding: const EdgeInsets.only(right: 20),
+                                      child: Icon(passToggle
+                                          ? Icons.visibility
+                                          : Icons.visibility_off),
+                                    ),
+                                  )),
+                              validator: (value) {
+                                if (value!.isEmpty) {
+                                  return "Entee Password";
+                                } else if (passController.text.length < 6) {
+                                  return "Password Length Should not be more than 6 characters";
+                                }
+                              },
+                            ),
                           ),
                         ),
                       ),
@@ -145,7 +150,7 @@ class _LoginnnState extends State<Loginnn> {
                         onTap: () {
                           if (_formfield.currentState!.validate()) {
                             Navigator.pushReplacement(context, MaterialPageRoute(builder: (context) {
-                              return Navigationnn();
+                              return Otppp();
                             },));
                             emailController.clear();
                             passController.clear();
